@@ -1,0 +1,259 @@
+.contactBar {
+  width: 100%;
+  background: #ffffff;
+}
+
+.inner {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.brand {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 35px;
+  border-right: 1px solid #e5e9f0;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      135deg,
+      #0c4c99,
+      #072f6a
+    );
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.brandContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandContent strong {
+  color: #0a397d;
+  font-size: 18px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brandContent > span{
+    color: #424242;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin-top: 2px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.contactList {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  gap: 20px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contactIcon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f0f4fa;
+  color: #0a397d;
+  font-size: 14px;
+}
+
+.locationIcon {
+  background: #ffefbb;
+}
+
+.contactContent {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactContent > span {
+  color: #757d89;
+  font-size: 13px;
+}
+
+.contactContent strong {
+  color: #0a1f45;
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.applyButton {
+  min-width: 180px;
+  min-height: 45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 7px 8px 7px 24px;
+  border-radius: 50px;
+  background:
+    linear-gradient(
+      90deg,
+      #003ca8,
+      #0b2e71
+    );
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.applyButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 55, 150, 0.25);
+}
+
+.applyArrow {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0b3979;
+}
+
+.menuButton {
+  display: none;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 8px;
+  background: #0b3979;
+  color: #ffffff;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  .inner {
+    gap: 18px;
+  }
+
+  .brand {
+    padding-right: 20px;
+  }
+
+  
+
+  .brandContent > span {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .contactList {
+    gap: 12px;
+  }
+
+  .contactIcon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contactContent strong {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .inner {
+    min-height: 95px;
+  }
+
+  .contactList {
+    display: none;
+  }
+
+  .brand {
+    flex: 1;
+    padding-right: 0;
+    border-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .inner {
+    min-height: 82px;
+  }
+
+  .applyButton {
+    display: none;
+  }
+
+  .menuButton {
+    display: grid;
+  }
+
+  .logo {
+    border-radius: 11px;
+
+  }
+
+  
+
+  .brandContent > span {
+    margin-top: 5px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    gap: 10px;
+  }
+
+ /*  .logo {
+    width: 44px;
+    height: 44px;
+    font-size: 19px;
+  } */
+
+  .brandContent strong {
+    font-size: 14px;
+  }
+
+  .brandContent > span {
+    font-size: 7px;
+    letter-spacing: 1.3px;
+  }
+
+  .menuButton {
+    width: 44px;
+    height: 44px;
+  }
+}

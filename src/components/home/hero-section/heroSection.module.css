@@ -1,0 +1,155 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 610px;
+  overflow: hidden;
+  background: #eaf4fb;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.92) 30%,
+      rgba(255, 255, 255, 0.45) 50%,
+      rgba(255, 255, 255, 0.05) 72%
+    );
+}
+
+.heroContainer {
+  position: relative;
+  z-index: 2;
+
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+.content {
+  width: 62%;
+  max-width: 780px;
+  min-height: 390px;
+}
+
+.approval {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 9px 18px;
+
+  border-radius: 100px;
+
+  background: #f5d59a;
+
+  color: #071b37;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-transform: capitalize;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.approval svg {
+  font-size: 18px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  margin-top: 16px;
+}
+
+.title {
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: clamp(58px, 5.2vw, 84px);
+  line-height: 0.9;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+
+  text-transform: capitalize;
+  font-family: var(--font-league-spartan), sans-serif;
+}
+
+.title span:first-child {
+  color: #07192f;
+}
+
+.title span:last-child {
+  color: #0b4286;
+
+  margin-top: 10px;
+}
+
+.subtitle {
+  margin-top: 0px;
+
+  color: #141414;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  text-transform: capitalize;
+}
+
+.location {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 13px;
+
+  padding: 12px 17px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  color: #071a35;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  text-transform: capitalize;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.location svg {
+  flex-shrink: 0;
+
+  font-size: 26px;
+  color: #082b58;
+}

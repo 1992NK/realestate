@@ -1,0 +1,7 @@
+.header {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(3, 38, 91, 0.07);
+}

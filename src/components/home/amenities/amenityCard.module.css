@@ -1,0 +1,224 @@
+.card {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #d9a442;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(16, 39, 67, 0.12);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.035);
+}
+
+.content{
+    z-index: 2;
+    background: linear-gradient(115deg, #12365b 0%, #08294a 55%, #05233f 100%);
+    border-radius: 0px 0px 17px 17px;
+    align-items: center;
+    min-height: 70px;
+    margin-top: -33px;
+    padding: 17px 22px;
+    display: flex;
+    position: relative;
+}
+
+.iconWrapper  {
+    color: #e8b654;
+    border: 2px solid #e8b654;
+    border-radius: 50%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    display: flex;
+}
+
+.divider {
+  flex-shrink: 0;
+
+  width: 1px;
+  height: 58px;
+  margin: 0 20px;
+
+  background: rgba(232, 182, 84, 0.7);
+}
+
+.info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.number {
+  margin-bottom: 2px;
+
+  color: #e8b654;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.title{
+    color: #fff;
+    font-family: var(--font-league-spartan), sans-serif;
+    letter-spacing: 0px;
+    margin: 0;
+    font-size: clamp(18px, 4vw, 20px);
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 15px;
+}
+
+.line {
+  display: block;
+
+  width: 48px;
+  height: 3px;
+
+  margin-top: 12px;
+
+  background: #e8b654;
+}
+
+/* =========================
+   Large Tablet
+========================= */
+
+@media (max-width: 1200px) {
+  .imageWrapper {
+    height: 235px;
+  }
+
+  .content {
+    padding: 16px 18px;
+  }
+
+  .iconWrapper {
+    width: 62px;
+    height: 62px;
+
+    font-size: 24px;
+  }
+
+  .divider {
+    margin: 0 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 991px) {
+  .imageWrapper {
+    height: 270px;
+  }
+
+  .content {
+    min-height: 105px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 767px) {
+  .imageWrapper {
+    height: 245px;
+  }
+
+  .content {
+    min-height: 102px;
+    margin-top: -30px;
+    padding: 15px 18px;
+
+    border-radius: 38px 38px 16px 16px;
+  }
+
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+
+    border-width: 3px;
+    font-size: 23px;
+  }
+
+  .divider {
+    height: 52px;
+    margin: 0 15px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .line {
+    width: 42px;
+    margin-top: 9px;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+  .card {
+    border-radius: 16px;
+  }
+
+  .imageWrapper {
+    height: 220px;
+  }
+
+  .content {
+    padding: 14px;
+  }
+
+  .iconWrapper {
+    width: 55px;
+    height: 55px;
+
+    font-size: 21px;
+  }
+
+  .divider {
+    margin: 0 13px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+}

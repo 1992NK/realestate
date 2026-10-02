@@ -1,0 +1,586 @@
+.aboutProject {
+  position: relative;
+
+  width: 100%;
+
+  padding: 55px 0 50px;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+
+/* =====================================
+   MAIN WRAPPER
+===================================== */
+
+.wrapper {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(400px, 460px);
+
+  align-items: center;
+
+  column-gap: clamp(70px, 7vw, 130px);
+}
+
+
+/* =====================================
+   LEFT CONTENT
+===================================== */
+
+.leftContent {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+  min-width: 0;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 12px;
+
+  color: #162238;
+
+  font-family: var(--font-heading), sans-serif;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 6px;
+}
+
+.eyebrowLine {
+  display: block;
+
+  width: 42px;
+  height: 2px;
+
+  flex-shrink: 0;
+
+  background-color: #e6a12c;
+}
+
+.heading {
+  margin: 0;
+
+  color: #141414;
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: clamp(44px, 4vw, 56px);
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.5px;
+}
+
+.highlight {
+  color: #103f78;
+}
+
+.subheading {
+  margin: 10px 0 17px;
+
+  color: #193c67;
+
+  font-family: var(--font-heading), sans-serif;
+
+  font-size: clamp(18px, 1.7vw, 18px);
+  font-weight: 500;
+
+  line-height: 1.2;
+}
+
+.description {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.description p {
+  margin: 0 0 14px;
+
+  color: #141414;
+
+  font-size: clamp(16px, 1vw, 16px);
+  font-weight: 400;
+
+  line-height: 27px;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =====================================
+   FEATURES
+===================================== */
+
+.features {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+
+/* =====================================
+   RIGHT CONTENT
+===================================== */
+
+.rightContent {
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  isolation: isolate;
+}
+
+
+/* =====================================
+   BLUE CIRCLE
+===================================== */
+
+.blueCircle {
+  position: absolute;
+
+  z-index: -2;
+
+  top: 50%;
+  left: 50%;
+
+  width: min(100%, 500px);
+
+  aspect-ratio: 1 / 1;
+
+  border-radius: 50%;
+
+  background-color: #e1effa;
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* =====================================
+   DOT PATTERN
+===================================== */
+
+.dots {
+  position: absolute;
+
+  z-index: -1;
+
+  top: 50%;
+  right: -30px;
+
+  width: 130px;
+  height: 200px;
+
+  transform: translateY(-50%);
+
+  opacity: 0.8;
+
+  background-image: radial-gradient(
+    circle,
+    #2f89cd 2px,
+    transparent 2.4px
+  );
+
+  background-size: 21px 21px;
+}
+
+
+/* =====================================
+   CERTIFICATE
+===================================== */
+
+.certificateWrapper {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(82%, 390px);
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  box-shadow:
+    0 22px 45px rgba(18, 33, 54, 0.18),
+    0 6px 15px rgba(18, 33, 54, 0.1);
+}
+
+.certificate {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  border: 1px solid #eee9dc;
+}
+
+
+/* =====================================
+   MEDIUM DESKTOP
+   1400px AND BELOW
+===================================== */
+
+@media (max-width: 1400px) {
+  .wrapper {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(360px, 420px);
+
+    column-gap: 80px;
+  }
+
+  .rightContent {
+    min-height: 500px;
+  }
+
+  .blueCircle {
+    width: min(100%, 450px);
+  }
+
+  .certificateWrapper {
+    width: min(80%, 345px);
+  }
+}
+
+
+/* =====================================
+   SMALL DESKTOP
+   1200px AND BELOW
+===================================== */
+
+@media (max-width: 1200px) {
+  .aboutProject {
+    padding: 50px 0;
+  }
+
+  .wrapper {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(330px, 380px);
+
+    column-gap: 60px;
+  }
+
+  .heading {
+    font-size: clamp(40px, 4.2vw, 52px);
+  }
+
+  .subheading {
+    font-size: 23px;
+  }
+
+  .description p {
+    font-size: 15px;
+  }
+
+  .rightContent {
+    min-height: 450px;
+  }
+
+  .blueCircle {
+    width: min(100%, 400px);
+  }
+
+  .certificateWrapper {
+    width: min(80%, 310px);
+  }
+
+  .dots {
+    right: -20px;
+
+    width: 110px;
+    height: 175px;
+  }
+}
+
+
+/* =====================================
+   TABLET
+   1024px AND BELOW
+===================================== */
+
+@media (max-width: 1024px) {
+  .aboutProject {
+    padding: 50px 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+
+    row-gap: 50px;
+  }
+
+  .leftContent {
+    width: 100%;
+  }
+
+  .heading {
+    max-width: 800px;
+  }
+
+  .description {
+    max-width: 900px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    max-width: 720px;
+
+    border: 1px solid #dfe4e9;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+  }
+
+  .rightContent {
+    width: min(100%, 600px);
+
+    min-height: 500px;
+
+    margin-inline: auto;
+  }
+
+  .blueCircle {
+    width: min(82vw, 500px);
+  }
+
+  .certificateWrapper {
+    width: min(48vw, 345px);
+  }
+
+  .dots {
+    right: 4%;
+  }
+}
+
+
+/* =====================================
+   MOBILE
+   768px AND BELOW
+===================================== */
+
+@media (max-width: 768px) {
+  .aboutProject {
+    padding: 42px 0;
+  }
+
+  .wrapper {
+    row-gap: 40px;
+  }
+
+  .eyebrow {
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+  }
+
+  .eyebrowLine {
+    width: 30px;
+  }
+
+  .heading {
+    font-size: clamp(36px, 9.5vw, 48px);
+
+    line-height: 1.03;
+
+    letter-spacing: -1px;
+  }
+
+  .subheading {
+    margin: 11px 0 15px;
+
+    font-size: 21px;
+
+    line-height: 1.25;
+  }
+
+  .description p {
+    margin-bottom: 13px;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .features {
+    margin-top: 25px;
+  }
+
+  .rightContent {
+    width: 100%;
+
+    min-height: 440px;
+
+    margin-top: 0;
+  }
+
+  .blueCircle {
+    width: min(86vw, 440px);
+  }
+
+  .certificateWrapper {
+    width: min(64vw, 310px);
+  }
+
+  .dots {
+    right: 3%;
+
+    width: 100px;
+    height: 155px;
+
+    background-size: 19px 19px;
+  }
+}
+
+
+/* =====================================
+   SMALL MOBILE
+   576px AND BELOW
+===================================== */
+
+@media (max-width: 576px) {
+  .aboutProject {
+    padding: 38px 0;
+  }
+
+  .wrapper {
+    row-gap: 32px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
+
+  .description p {
+    font-size: 14px;
+  }
+
+  .features {
+    width: 100%;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rightContent {
+    min-height: 390px;
+  }
+
+  .blueCircle {
+    width: min(90vw, 380px);
+  }
+
+  .certificateWrapper {
+    width: min(69vw, 275px);
+
+    padding: 9px;
+  }
+
+  .dots {
+    right: -15px;
+
+    width: 85px;
+    height: 135px;
+
+    background-size: 17px 17px;
+  }
+}
+
+
+/* =====================================
+   EXTRA SMALL MOBILE
+   420px AND BELOW
+===================================== */
+
+@media (max-width: 420px) {
+  .aboutProject {
+    padding: 34px 0;
+  }
+
+  .wrapper {
+    row-gap: 28px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+  .heading {
+    font-size: 34px;
+
+    line-height: 1.05;
+  }
+
+  .subheading {
+    font-size: 19px;
+  }
+
+  .description p {
+    font-size: 13.5px;
+
+    line-height: 1.55;
+  }
+
+  .rightContent {
+    min-height: 350px;
+  }
+
+  .blueCircle {
+    width: min(88vw, 345px);
+  }
+
+  .certificateWrapper {
+    width: min(70vw, 255px);
+  }
+
+  .dots {
+    right: -22px;
+
+    width: 75px;
+    height: 120px;
+
+    background-size: 16px 16px;
+  }
+}

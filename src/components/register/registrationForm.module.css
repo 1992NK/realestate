@@ -1,0 +1,453 @@
+.form {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  margin-bottom: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 3px 15px rgba(19, 40, 68, 0.06);
+}
+
+.sectionTitle {
+  min-height: 46px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0 20px;
+
+  background: linear-gradient(90deg, #003ca8, #0b2e71);
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sectionTitle svg {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.sectionBody {
+  padding: 24px 22px;
+}
+
+.field {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #5e6570;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+.field label span {
+  color: #05368f;
+}
+
+.field input {
+  width: 100%;
+  height: 43px;
+
+  padding: 0 13px;
+
+  background: #f8fafc;
+
+  border: 1px solid #dfe5eb;
+  border-radius: 7px;
+
+  color: #323842;
+
+  font-size: 13px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.field input::placeholder {
+  color: #bcc5d0;
+}
+
+.field input:focus {
+  background: #ffffff;
+
+  border-color: #05368f;
+
+  box-shadow: 0 0 0 3px rgba(239, 100, 47, 0.1);
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.halfField {
+  width: calc(50% - 8px);
+}
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.radioOption {
+  position: relative;
+
+  display: inline-flex !important;
+  align-items: center;
+
+  margin: 0 !important;
+
+  cursor: pointer;
+}
+
+.radioOption input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  opacity: 0;
+}
+
+.radioOption span {
+  min-height: 31px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 5px 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dbe2;
+  border-radius: 20px;
+
+  color: #676e78 !important;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  text-transform: none;
+
+  transition: 0.2s ease;
+}
+
+.radioOption span::before {
+  content: "";
+
+  width: 11px;
+  height: 11px;
+
+  margin-right: 5px;
+
+  border: 1px solid #a7adb5;
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+.radioOption input:checked + span {
+  border-color: #05368f;
+
+  background: #05368f;
+
+  color: #ffffff !important;
+}
+
+.radioOption input:checked + span::before {
+  border: 3px solid #ffffff;
+
+  background: #05368f;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 4px 0 22px;
+
+  border-top: 1px dashed #e4e7eb;
+}
+
+.sameAddress {
+  width: 100%;
+  min-height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 8px 12px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #05368e;
+  border-radius: 6px;
+
+  background: #edf3ff;
+
+  cursor: pointer;
+}
+
+.sameAddress input {
+  width: 17px;
+  height: 17px;
+
+  margin-right: 7px;
+
+  accent-color: #05368e;
+}
+
+.sameAddress span {
+  color: #05368e;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.plotGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.plotCard {
+  min-height: 100px;
+
+  padding: 15px;
+
+  border: 1px solid #d6dde6;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  font-family: inherit;
+}
+
+.plotCard:hover {
+  border-color: #05368f;
+
+  transform: translateY(-1px);
+}
+
+.plotCard strong {
+  display: block;
+
+  color: #333a43;
+
+  font-size: 16px;
+
+  margin-bottom: 15px;
+}
+
+.plotCard div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.plotCard div span {
+  color: #818792;
+  font-size: 11px;
+}
+
+.plotCard div b {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 4px 10px;
+
+  border-radius: 20px;
+
+  background: #05368f;
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+.activePlot {
+  border: 2px solid #05368f;;
+
+  background: #edf3ff;;
+}
+
+.submitBox {
+  width: 100%;
+
+  text-align: center;
+
+  padding: 25px 20px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 3px 15px rgba(19, 40, 68, 0.06);
+}
+
+.submitButton {
+  min-width: 280px;
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 10px 30px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: #05368f;;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #05368f;
+
+  transform: translateY(-1px);
+}
+
+.submitBox p {
+  margin: 12px 0 0;
+
+  color: #a2aab5;
+
+  font-size: 10px;
+}
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 991px) {
+  .form {
+    max-width: 100%;
+  }
+
+  .sectionBody {
+    padding: 20px;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+  .section {
+    border-radius: 8px;
+    margin-bottom: 14px;
+  }
+
+  .sectionTitle {
+    min-height: 44px;
+
+    padding: 0 15px;
+
+    font-size: 13px;
+  }
+
+  .sectionBody {
+    padding: 18px 14px;
+  }
+
+  .gridTwo {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .halfField {
+    width: 100%;
+  }
+
+  .field {
+    margin-bottom: 15px;
+  }
+
+  .field input {
+    height: 44px;
+  }
+
+  .radioGroup {
+    gap: 7px;
+  }
+
+  .radioOption span {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .plotGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .plotCard {
+    min-height: 95px;
+  }
+
+  .submitBox {
+    padding: 22px 14px;
+  }
+
+  .submitButton {
+    width: 100%;
+    min-width: 0;
+  }
+}

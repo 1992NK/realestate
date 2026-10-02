@@ -1,0 +1,12 @@
+.stats {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(7, 31, 61, 0.18);
+}

@@ -1,0 +1,251 @@
+.locationMap {
+  width: 100%;
+  position: relative;
+  padding: 54px 0 24px;
+  scroll-margin-top: 90px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.96) 0%,
+      rgba(243, 250, 255, 0.95) 45%,
+      rgba(225, 243, 255, 0.95) 100%
+    );
+}
+
+.locationMapInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.headingWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.heading {
+    color: #141414;
+    font-family: var(--font-league-spartan), sans-serif;
+    letter-spacing: -1.5px;
+    margin: 0;
+    font-size: clamp(44px, 4vw, 56px);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.headingLine {
+  display: block;
+  width: 58px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #141414;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    color: #141414;
+    margin: 0 0 14px;
+    font-size: clamp(16px, 1vw, 16px);
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.mapBox {
+  width: min(1035px, 100%);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #76abd5;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow:
+    0 10px 30px rgba(15, 70, 110, 0.08),
+    0 2px 8px rgba(15, 70, 110, 0.05);
+}
+
+.mapImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================
+   CALL BUTTON
+========================= */
+
+.callButton {
+  width: min(610px, 82%);
+  min-height: 40px;
+  margin-top: 14px;
+  padding: 9px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  background: linear-gradient(
+    90deg,
+    #008c2c 0%,
+    #15963c 50%,
+    #008c2c 100%
+  );
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+
+  box-shadow: 0 5px 15px rgba(0, 125, 50, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.callButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 125, 50, 0.22);
+  background: linear-gradient(
+    90deg,
+    #007d27 0%,
+    #128632 50%,
+    #007d27 100%
+  );
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+  .locationMap {
+    padding: 46px 0 22px;
+  }
+
+  .headingWrap {
+    gap: 17px;
+    margin-bottom: 22px;
+  }
+
+  .headingLine {
+    width: 46px;
+    height: 3px;
+  }
+
+  .description {
+    max-width: 850px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .mapBox {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .callButton {
+    width: min(560px, 86%);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+  .locationMap {
+    padding: 38px 0 20px;
+  }
+
+  .headingWrap {
+    gap: 12px;
+    margin-bottom: 19px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .headingLine {
+    width: 35px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .mapBox {
+    border-width: 1.5px;
+    border-radius: 10px;
+  }
+
+  .callButton {
+    width: 92%;
+    min-height: 42px;
+    margin-top: 12px;
+    padding: 9px 15px;
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .locationMap {
+    padding: 32px 0 18px;
+  }
+
+  .headingWrap {
+    gap: 9px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .headingLine {
+    width: 25px;
+    height: 3px;
+  }
+
+  .description {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .mapBox {
+    border-radius: 8px;
+  }
+
+  .callButton {
+    width: 100%;
+    font-size: 13px;
+  }
+}

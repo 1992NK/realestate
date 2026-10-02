@@ -1,0 +1,117 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 190px;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("/images/register/register-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #05368f;;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+  color: #ffffff;
+
+  padding: 35px 15px;
+}
+
+.rera {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  margin-bottom: 13px;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.title span {
+  font-size: 22px;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* tablet */
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: 175px;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 200px;
+  }
+
+  .content {
+    padding: 32px 5px;
+  }
+
+  .rera {
+    font-size: 9px;
+    padding: 5px 9px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

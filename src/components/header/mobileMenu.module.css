@@ -1,0 +1,160 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1998;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: rgba(3, 22, 52, 0.62);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  cursor: pointer;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.overlayVisible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1999;
+  width: min(88%, 380px);
+  height: 100dvh;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: #ffffff;
+  box-shadow: -10px 0 35px rgba(0, 24, 67, 0.14);
+  transform: translateX(105%);
+  transition: transform 0.35s ease;
+}
+
+.menuOpen {
+  transform: translateX(0);
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e6ebf2;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #0a397d;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.brandContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandContent strong {
+  color: #0a397d;
+  font-size: 14px;
+}
+
+.brandContent > span {
+  margin-top: 3px;
+  color: #555f6e;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.closeButton {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eef3f9;
+  color: #0a397d;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navigation {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navLink {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #e9edf3;
+  color: #08295e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.navLink svg {
+  color: #d79d00;
+  font-size: 12px;
+}
+
+.navLink:hover {
+  padding-left: 7px;
+  color: #00509e;
+}
+
+.applyButton {
+  min-height: 55px;
+  margin-top: 30px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-radius: 8px;
+  background:
+    linear-gradient(
+      90deg,
+      #003ca8,
+      #0b2e71
+    );
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 901px) {
+  .overlay,
+  .menu {
+    display: none;
+  }
+}

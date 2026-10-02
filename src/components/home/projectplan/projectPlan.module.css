@@ -1,0 +1,168 @@
+.projectPlan {
+  width: 100%;
+  padding: 55px 0 70px;
+  background: #ffffff;
+  scroll-margin-top: 100px;
+}
+
+.headingWrapper {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.title {
+    color: #141414;
+    font-family: var(--font-league-spartan), sans-serif;
+    letter-spacing: -1.5px;
+    margin: 0;
+    font-size: clamp(44px, 4vw, 56px);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.subtitle{
+    color: #141414;
+    margin: 0 0 14px;
+    font-size: clamp(16px, 1vw, 16px);
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 15px;
+}
+
+.planWrapper {
+  position: relative;
+
+  aspect-ratio: 1.225 / 1;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  border: 2px solid #d5a31b;
+  border-radius: 6px;
+
+  background: #f4f4f4;
+}
+
+.planImage {
+  object-fit: contain;
+  object-position: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 1199px) {
+  .projectPlan {
+    padding: 50px 0 65px;
+  }
+
+  .planWrapper {
+    width: min(100%, 950px);
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+  .projectPlan {
+    padding: 45px 0 55px;
+    scroll-margin-top: 90px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+
+  .planWrapper {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 767px) {
+  .projectPlan {
+    padding: 40px 0 50px;
+    scroll-margin-top: 80px;
+  }
+
+  .headingWrapper {
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+  }
+
+  .planWrapper {
+    border-width: 1.5px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 575px) {
+  .projectPlan {
+    padding: 35px 0 42px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .subtitle {
+    margin-top: 7px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .planWrapper {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+  .projectPlan {
+    padding: 30px 0 38px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 9px;
+  }
+}
