@@ -25,14 +25,14 @@ const RegistrationForm = () => {
         <div className={styles.sectionBody}>
           <div className={styles.field}>
             <label>
-              FIRST / SOLE APPLICANT <span>*</span>
+              First / Sole Applicant <span>*</span>
             </label>
             <input type="text" placeholder="Full Name" required />
           </div>
 
           <div className={styles.field}>
             <label>
-              RELATION <span>*</span>
+              Relation <span>*</span>
             </label>
             <div className={styles.radioGroup}>
               {relations.map((relation, index) => (
@@ -46,7 +46,7 @@ const RegistrationForm = () => {
 
           <div className={styles.field}>
             <label>
-              FATHER / HUSBAND NAME <span>*</span>
+              Father / Husband Name <span>*</span>
             </label>
             <input type="text" placeholder="Enter full name" required />
           </div>
@@ -54,14 +54,14 @@ const RegistrationForm = () => {
           <div className={styles.gridTwo}>
             <div className={styles.field}>
               <label>
-                DATE OF BIRTH <span>*</span>
+                Date Of Birth <span>*</span>
               </label>
               <input type="date" required />
             </div>
 
             <div className={styles.field}>
               <label>
-                NATIONALITY <span>*</span>
+                Nationality <span>*</span>
               </label>
               <input type="text" defaultValue="INDIAN" required />
             </div>
@@ -70,20 +70,20 @@ const RegistrationForm = () => {
           <div className={styles.gridTwo}>
             <div className={styles.field}>
               <label>
-                MOBILE NO. <span>*</span>
+                Mobile No. <span>*</span>
               </label>
               <input type="tel" placeholder="10-digit Mobile Number" maxLength={10} required />
             </div>
 
             <div className={styles.field}>
-              <label>TELEPHONE NO.</label>
+              <label>Telephone No.</label>
               <input type="tel" placeholder="Telephone (optional)" />
             </div>
           </div>
 
           <div className={styles.field}>
             <label>
-              EMAIL ID <span>*</span>
+              Email ID <span>*</span>
             </label>
             <input type="email" placeholder="your@email.com" required />
           </div>
@@ -92,7 +92,7 @@ const RegistrationForm = () => {
 
           <div className={styles.field}>
             <label>
-              QUOTA <span>*</span>
+              Quota <span>*</span>
             </label>
             <div className={styles.radioGroup}>
               {quotas.map((quota, index) => (
@@ -169,7 +169,7 @@ const AddressFields = ({ prefix }) => {
     <>
       <div className={styles.field}>
         <label>
-          HOUSE NO. <span>*</span>
+          House No. <span>*</span>
         </label>
         <input type="text" name={`${prefix}-house`} placeholder="House / Flat No." required />
       </div>
@@ -177,14 +177,14 @@ const AddressFields = ({ prefix }) => {
       <div className={styles.gridTwo}>
         <div className={styles.field}>
           <label>
-            STREET <span>*</span>
+            Street <span>*</span>
           </label>
           <input type="text" name={`${prefix}-street`} placeholder="Street / Road" required />
         </div>
 
         <div className={styles.field}>
           <label>
-            LOCALITY <span>*</span>
+            Locality <span>*</span>
           </label>
           <input type="text" name={`${prefix}-locality`} placeholder="Locality / Colony" required />
         </div>
@@ -193,14 +193,14 @@ const AddressFields = ({ prefix }) => {
       <div className={styles.gridTwo}>
         <div className={styles.field}>
           <label>
-            CITY <span>*</span>
+            City <span>*</span>
           </label>
           <input type="text" name={`${prefix}-city`} placeholder="City" required />
         </div>
 
         <div className={styles.field}>
           <label>
-            STATE <span>*</span>
+            State <span>*</span>
           </label>
           <input type="text" name={`${prefix}-state`} placeholder="State" required />
         </div>
@@ -209,7 +209,7 @@ const AddressFields = ({ prefix }) => {
       <div className={styles.halfField}>
         <div className={styles.field}>
           <label>
-            PINCODE <span>*</span>
+            Pincode <span>*</span>
           </label>
           <input type="text" name={`${prefix}-pincode`} placeholder="6-digit Pincode" maxLength={6} required />
         </div>

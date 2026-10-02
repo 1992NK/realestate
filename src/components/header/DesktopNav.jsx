@@ -1,5 +1,4 @@
 import { navLinks } from "@/data/headerData";
-
 import styles from "./desktopNav.module.css";
 
 const DesktopNav = () => {

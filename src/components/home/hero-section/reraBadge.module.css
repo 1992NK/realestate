@@ -5,76 +5,158 @@
 .outerRing {
   width: 125px;
   height: 125px;
-
   padding: 7px;
-
   border-radius: 50%;
-
-  background: linear-gradient(
-    145deg,
-    #fff0bd,
-    #d7a63d,
-    #ffe1a0
-  );
-
-  box-shadow:
-    0 7px 18px rgba(6, 26, 54, 0.25),
-    inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(145deg, #fff0bd, #d7a63d, #ffe1a0);
+  box-shadow: 0 7px 18px rgba(6, 26, 54, 0.25), inset 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
 .inner {
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  border-radius: 50%;
-
   border: 3px solid #f3ca71;
-
-  background: linear-gradient(
-    160deg,
-    #174f84,
-    #062b58
-  );
-
+  border-radius: 50%;
+  background: linear-gradient(160deg, #174f84, #062b58);
   color: #ffffff;
-
   text-transform: uppercase;
 }
 
 .stars {
   display: flex;
   gap: 5px;
-
   color: #f6cd6d;
-
   font-size: 11px;
 }
 
 .rera {
   margin-top: 4px;
-
   color: #f8d179;
-
   font-size: 27px;
   line-height: 1;
-
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .approved {
   margin-top: 4px;
-
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .check {
   margin-top: 4px;
-
   font-size: 15px;
+}
+
+@media (max-width: 1399px) {
+  .outerRing {
+    width: 118px;
+    height: 118px;
+  }
+
+  .rera {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .outerRing {
+    width: 110px;
+    height: 110px;
+    padding: 6px;
+  }
+
+  .stars {
+    gap: 4px;
+    font-size: 10px;
+  }
+
+  .rera {
+    font-size: 23px;
+  }
+
+  .approved {
+    font-size: 11px;
+  }
+
+  .check {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .outerRing {
+    width: 102px;
+    height: 102px;
+  }
+
+  .inner {
+    border-width: 2px;
+  }
+
+  .rera {
+    font-size: 21px;
+  }
+
+  .approved {
+    font-size: 10px;
+  }
+
+  .check {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .outerRing {
+    width: 94px;
+    height: 94px;
+    padding: 5px;
+  }
+
+  .stars {
+    font-size: 9px;
+  }
+
+  .rera {
+    margin-top: 3px;
+    font-size: 19px;
+  }
+
+  .approved {
+    margin-top: 3px;
+    font-size: 9px;
+  }
+
+  .check {
+    margin-top: 3px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .outerRing {
+    width: 86px;
+    height: 86px;
+  }
+
+  .stars {
+    gap: 3px;
+    font-size: 8px;
+  }
+
+  .rera {
+    font-size: 17px;
+  }
+
+  .approved {
+    font-size: 8px;
+  }
+
+  .check {
+    font-size: 11px;
+  }
 }

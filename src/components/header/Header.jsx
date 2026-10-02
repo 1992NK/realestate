@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import ContactBar from "./ContactBar";
 import DesktopNav from "./DesktopNav";
 import MobileMenu from "./MobileMenu";
 import TopTicker from "./TopTicker";
-
 import styles from "./header.module.css";
 
 const Header = () => {
@@ -59,18 +57,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <TopTicker />
-
-      <ContactBar
-        isMenuOpen={isMenuOpen}
-        onMenuOpen={handleMenuOpen}
-      />
-
+      <ContactBar isMenuOpen={isMenuOpen} onMenuOpen={handleMenuOpen} />
       <DesktopNav />
-
-      <MobileMenu
-        isOpen={isMenuOpen}
-        onClose={handleMenuClose}
-      />
+      <MobileMenu isOpen={isMenuOpen} onClose={handleMenuClose} />
     </header>
   );
 };

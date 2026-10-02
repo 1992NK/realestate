@@ -1,105 +1,53 @@
 .locationSection {
   position: relative;
-
   width: 100%;
-
   overflow: hidden;
-
-  background:
-    radial-gradient(
-      circle at 25% 50%,
-      rgba(24, 74, 116, 0.22),
-      transparent 38%
-    ),
-    linear-gradient(
-      115deg,
-      #041e38 0%,
-      #031a31 50%,
-      #00172d 100%
-    );
-
+  background: radial-gradient(circle at 25% 50%, rgba(24, 74, 116, 0.22), transparent 38%), linear-gradient(115deg, #041e38 0%, #031a31 50%, #00172d 100%);
   scroll-margin-top: 90px;
 }
 
 .locationContainer {
   position: relative;
-
   width: 100%;
   min-height: 680px;
-
   display: grid;
-
   grid-template-columns: 58% 42%;
 }
 
-/* ==============================
-   LEFT CONTENT
-================================ */
-
 .content {
   position: relative;
-
   z-index: 5;
-
-  padding:
-    52px
-    35px
-    34px
-    max(40px, calc((100vw - 1450px) / 2));
+  padding: 52px 35px 34px max(40px, calc((100vw - 1450px) / 2));
 }
-
-/* ==============================
-   EYEBROW
-================================ */
 
 .eyebrow {
   display: flex;
-
   align-items: center;
-
   gap: 15px;
-
   margin-bottom: 12px;
-
   color: #fff;
-
   font-family: var(--font-heading), sans-serif;
-
   font-size: 13px;
   font-weight: 600;
-
   letter-spacing: 6px;
-
   text-transform: uppercase;
 }
 
 .eyebrowLine {
   display: block;
-
   flex-shrink: 0;
-
   width: 42px;
   height: 2px;
-
   background-color: #e6a12c;
 }
 
-/* ==============================
-   HEADING
-================================ */
-
 .heading {
   margin: 0;
-
   color: #fff;
-
   font-family: var(--font-league-spartan), sans-serif;
-
   font-size: clamp(44px, 4vw, 56px);
   font-weight: 600;
-
   line-height: 1;
-
   letter-spacing: -1.5px;
 }
 
@@ -109,345 +57,185 @@
 
 .headingLine {
   display: block;
-
   width: 90px;
   height: 2px;
-
   margin-top: 14px;
   margin-bottom: 18px;
-
-  background: linear-gradient(
-    90deg,
-    #dfaa3c,
-    rgba(223, 170, 60, 0.1)
-  );
+  background: linear-gradient(90deg, #dfaa3c, rgba(223, 170, 60, 0.1));
 }
-
-/* ==============================
-   DESCRIPTION
-================================ */
 
 .description {
   max-width: 750px;
-
   margin: 15px 0 14px;
-
   color: #fff;
-
-  font-size: clamp(16px, 1vw, 16px);
+  font-size: 16px;
   font-weight: 400;
-
   line-height: 27px;
 }
-
-/* ==============================
-   BENEFITS GRID
-================================ */
 
 .benefitsGrid {
   width: 100%;
   max-width: 750px;
-
   margin-top: 24px;
-
   display: grid;
-
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
   gap: 9px 24px;
 }
 
-/* ==============================
-   BENEFIT CARD
-================================ */
-
 .benefitCard {
   min-height: 58px;
-
   display: grid;
-
-  grid-template-columns:
-    48px
-    minmax(0, 1fr)
-    1px
-    100px;
-
+  grid-template-columns: 48px minmax(0, 1fr) 1px 100px;
   align-items: center;
-
   gap: 12px;
-
   padding: 5px 18px 5px 12px;
-
   border: 1px solid rgba(255, 255, 255, 0.25);
-
   border-radius: 15px;
-
-  background: linear-gradient(
-    100deg,
-    rgba(255, 255, 255, 0.055),
-    rgba(255, 255, 255, 0.02)
-  );
-
-  box-shadow:
-    inset 0 0 22px rgba(255, 255, 255, 0.02),
-    0 8px 28px rgba(0, 0, 0, 0.08);
-
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    background 0.3s ease;
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  box-shadow: inset 0 0 22px rgba(255, 255, 255, 0.02), 0 8px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
 .benefitCard:hover {
   transform: translateY(-2px);
-
   border-color: rgba(233, 186, 87, 0.5);
-
-  background: linear-gradient(
-    100deg,
-    rgba(255, 255, 255, 0.075),
-    rgba(255, 255, 255, 0.025)
-  );
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025));
 }
-
-/* ==============================
-   ICON
-================================ */
 
 .iconBox {
   width: 43px;
   height: 43px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
-
   border-radius: 50%;
-
   background: #fff2d6;
-
   color: #061d37;
-
   font-size: 21px;
 }
 
-/* ==============================
-   CARD TITLE
-================================ */
-
 .benefitTitle {
   min-width: 0;
-
   margin: 0;
-
-  color: #ffffff;
-
+  color: #fff;
   font-size: 13px;
   font-weight: 500;
-
   line-height: 20px;
 }
-
-/* ==============================
-   DIVIDER
-================================ */
 
 .divider {
   width: 1px;
   height: 25px;
-
   background: rgba(255, 255, 255, 0.25);
 }
 
-/* ==============================
-   TIME
-================================ */
-
 .time {
   color: #efbd55;
-
   font-size: 15px;
   font-weight: 600;
-
   white-space: nowrap;
 }
-
-/* ==============================
-   BUTTON
-================================ */
 
 .buttonWrapper {
   width: 100%;
   max-width: 750px;
-
   display: flex;
-
   justify-content: center;
-
   margin-top: 26px;
 }
 
 .applyButton {
   min-width: 245px;
   min-height: 56px;
-
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   gap: 17px;
-
   padding: 12px 34px;
-
   border: 1px solid rgba(255, 229, 170, 0.8);
-
   border-radius: 999px;
-
-  background: linear-gradient(
-    180deg,
-    #fff6d4 0%,
-    #f4ce73 52%,
-    #dca331 100%
-  );
-
-  box-shadow:
-    inset 0 1px 2px rgba(255, 255, 255, 0.75),
-    0 9px 20px rgba(0, 0, 0, 0.18);
-
+  background: linear-gradient(180deg, #fff6d4 0%, #f4ce73 52%, #dca331 100%);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.75), 0 9px 20px rgba(0, 0, 0, 0.18);
   color: #071c34;
-
   font-family: var(--font-league-spartan), sans-serif;
-
   font-size: 18px;
   font-weight: 700;
-
   text-decoration: none;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .applyButton svg {
   flex-shrink: 0;
-
   font-size: 18px;
-
   transition: transform 0.25s ease;
 }
 
 .applyButton:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    inset 0 1px 2px rgba(255, 255, 255, 0.75),
-    0 13px 25px rgba(0, 0, 0, 0.23);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.75), 0 13px 25px rgba(0, 0, 0, 0.23);
 }
 
 .applyButton:hover svg {
   transform: translateX(4px);
 }
 
-/* ==============================
-   RIGHT IMAGE
-================================ */
-
 .visualWrapper {
   position: relative;
-
   min-width: 0;
-
   height: 100%;
 }
 
-/* ==============================
-   GOLD CURVE
-================================ */
-
 .visualRing {
   position: absolute;
-
   z-index: 0;
-
   left: -120px;
   top: -95px;
-
   width: 330px;
   height: calc(100% + 190px);
-
   border: 1px solid rgba(223, 175, 75, 0.42);
-
   border-radius: 50%;
-
   pointer-events: none;
 }
 
 .visualRing::before,
 .visualRing::after {
   content: "";
-
   position: absolute;
-
   top: 0;
   bottom: 0;
-
   margin: auto;
-
   border: 1px solid rgba(223, 175, 75, 0.24);
-
   border-radius: 50%;
 }
 
 .visualRing::before {
   left: 42px;
-
   width: 260px;
   height: 93%;
 }
 
 .visualRing::after {
   left: 84px;
-
   width: 190px;
   height: 86%;
 }
 
-/* ==============================
-   SINGLE COMPLETE IMAGE
-================================ */
-
 .visual {
   position: absolute;
-
   z-index: 2;
-
   inset: 0;
-
   overflow: hidden;
-
-  border-top-left-radius: 48% 50%;
-  border-bottom-left-radius: 48% 50%;
-
+  border-top-left-radius: 25% 50%;
+  border-bottom-left-radius: 25% 50%;
   background-image: url("/images/location/location-map.webp");
-
   background-position: center;
-
   background-size: cover;
-
   background-repeat: no-repeat;
-
   box-shadow: -20px 0 35px rgba(0, 0, 0, 0.14);
 }
 
-/* ==========================================
-   LARGE LAPTOP
-========================================== */
-
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
   .locationContainer {
     grid-template-columns: 56% 44%;
   }
@@ -461,14 +249,8 @@
   }
 
   .benefitCard {
-    grid-template-columns:
-      45px
-      minmax(0, 1fr)
-      1px
-      85px;
-
+    grid-template-columns: 45px minmax(0, 1fr) 1px 85px;
     gap: 9px;
-
     padding-right: 13px;
   }
 
@@ -477,30 +259,16 @@
   }
 }
 
-/* ==========================================
-   TABLET
-========================================== */
-
-@media (max-width: 1100px) {
-  .locationSection {
-    overflow: hidden;
-  }
-
+@media (max-width: 1199px) {
   .locationContainer {
     min-height: auto;
-
     display: flex;
-
     flex-direction: column;
   }
 
   .content {
     width: 100%;
-
-    padding:
-      60px
-      max(30px, calc((100vw - 960px) / 2))
-      48px;
+    padding: 60px max(30px, calc((100vw - 960px) / 2)) 48px;
   }
 
   .description,
@@ -515,10 +283,7 @@
   }
 
   .visual {
-    position: absolute;
-
     border-radius: 0;
-
     background-position: center;
   }
 
@@ -531,20 +296,28 @@
   }
 }
 
-/* ==========================================
-   SMALL TABLET
-========================================== */
+@media (max-width: 991px) {
+  .content {
+    padding: 55px 30px 45px;
+  }
 
-@media (max-width: 768px) {
+  .heading {
+    font-size: 48px;
+  }
+
+  .visualWrapper {
+    height: 560px;
+  }
+}
+
+@media (max-width: 767px) {
   .content {
     padding: 50px 20px 40px;
   }
 
   .eyebrow {
     gap: 11px;
-
     font-size: 13px;
-
     letter-spacing: 5px;
   }
 
@@ -558,57 +331,34 @@
 
   .description {
     font-size: 15px;
-
     line-height: 1.6;
   }
 
   .benefitsGrid {
     grid-template-columns: 1fr;
-
     gap: 10px;
   }
 
   .benefitCard {
-    grid-template-columns:
-      46px
-      minmax(0, 1fr)
-      1px
-      95px;
-
+    grid-template-columns: 46px minmax(0, 1fr) 1px 95px;
     min-height: 60px;
-
     padding: 7px 14px;
-  }
-
-  .buttonWrapper {
-    margin-top: 26px;
   }
 
   .visualWrapper {
     height: 510px;
   }
-
-  .visual {
-    background-position: center;
-  }
 }
 
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width: 520px) {
+@media (max-width: 576px) {
   .content {
     padding: 42px 16px 35px;
   }
 
   .eyebrow {
     gap: 8px;
-
     margin-bottom: 7px;
-
     font-size: 11px;
-
     letter-spacing: 3px;
   }
 
@@ -618,13 +368,11 @@
 
   .heading {
     font-size: 35px;
-
     line-height: 1.08;
   }
 
   .headingLine {
     width: 65px;
-
     margin-top: 12px;
   }
 
@@ -633,21 +381,14 @@
   }
 
   .benefitCard {
-    grid-template-columns:
-      42px
-      minmax(0, 1fr)
-      1px
-      75px;
-
+    grid-template-columns: 42px minmax(0, 1fr) 1px 75px;
     gap: 8px;
-
     padding: 7px 10px;
   }
 
   .iconBox {
     width: 38px;
     height: 38px;
-
     font-size: 18px;
   }
 
@@ -666,69 +407,12 @@
   .applyButton {
     width: 100%;
     max-width: 280px;
-
     min-width: 0;
     min-height: 52px;
-
     font-size: 16px;
   }
 
   .visualWrapper {
     height: 410px;
-  }
-
-  .visual {
-    background-position: center;
-  }
-}
-
-/* ==========================================
-   VERY SMALL MOBILE
-========================================== */
-
-@media (max-width: 390px) {
-  .content {
-    padding-inline: 14px;
-  }
-
-  .eyebrow {
-    font-size: 10px;
-
-    letter-spacing: 2.5px;
-  }
-
-  .heading {
-    font-size: 31px;
-  }
-
-  .benefitCard {
-    grid-template-columns:
-      38px
-      minmax(0, 1fr)
-      1px
-      67px;
-
-    gap: 7px;
-  }
-
-  .iconBox {
-    width: 35px;
-    height: 35px;
-
-    font-size: 16px;
-  }
-
-  .benefitTitle {
-    font-size: 12px;
-
-    line-height: 17px;
-  }
-
-  .time {
-    font-size: 12px;
-  }
-
-  .visualWrapper {
-    height: 340px;
   }
 }

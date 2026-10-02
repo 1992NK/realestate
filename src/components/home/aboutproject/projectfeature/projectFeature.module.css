@@ -2,9 +2,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-
   min-width: 0;
-
   padding: 0 28px;
 }
 
@@ -19,18 +17,13 @@
 .iconBox {
   width: 70px;
   height: 70px;
-
   flex-shrink: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background-color: #e3f0fb;
   color: #13487e;
-
   font-size: 28px;
 }
 
@@ -41,18 +34,37 @@
 .title,
 .subtitle {
   margin: 0;
-
   color: #121c2e;
-
   font-size: 15px;
   font-weight: 600;
-
   line-height: 1.45;
 }
 
+@media (max-width: 1399px) {
+  .feature {
+    padding: 0 22px;
+  }
+}
 
+@media (max-width: 1199px) {
+  .feature {
+    gap: 14px;
+    padding: 0 18px;
+  }
 
-@media (max-width: 1024px) {
+  .iconBox {
+    width: 62px;
+    height: 62px;
+    font-size: 25px;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
   .feature {
     padding: 18px 20px;
   }
@@ -74,11 +86,31 @@
   }
 }
 
+@media (max-width: 767px) {
+  .feature {
+    gap: 12px;
+    padding: 16px 14px;
+  }
+
+  .feature:first-child {
+    padding-left: 14px;
+  }
+
+  .iconBox {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 13px;
+  }
+}
 
 @media (max-width: 576px) {
   .feature {
     gap: 10px;
-
     padding: 14px 10px;
   }
 
@@ -89,7 +121,6 @@
   .iconBox {
     width: 48px;
     height: 48px;
-
     font-size: 20px;
   }
 

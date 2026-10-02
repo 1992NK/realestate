@@ -1,7 +1,5 @@
 import HeroStatCard from "./HeroStatCard";
-
 import { heroStats } from "@/data/heroData";
-
 import styles from "./heroStats.module.css";
 
 const HeroStats = () => {

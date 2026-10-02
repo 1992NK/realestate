@@ -26,12 +26,7 @@
   display: grid;
   place-items: center;
   border-radius: 16px;
-  background:
-    linear-gradient(
-      135deg,
-      #0c4c99,
-      #072f6a
-    );
+  background: linear-gradient(135deg, #0c4c99, #072f6a);
   color: #ffffff;
   font-size: 20px;
 }
@@ -48,13 +43,13 @@
   white-space: nowrap;
 }
 
-.brandContent > span{
-    color: #424242;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    margin-top: 2px;
-    font-size: 11px;
-    font-weight: 700;
+.brandContent > span {
+  margin-top: 2px;
+  color: #424242;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .contactList {
@@ -62,7 +57,7 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content:end;
+  justify-content: flex-end;
   gap: 20px;
 }
 
@@ -103,8 +98,8 @@
 .contactContent strong {
   color: #0a1f45;
   font-size: 14px;
-  white-space: nowrap;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .applyButton {
@@ -117,18 +112,11 @@
   gap: 15px;
   padding: 7px 8px 7px 24px;
   border-radius: 50px;
-  background:
-    linear-gradient(
-      90deg,
-      #003ca8,
-      #0b2e71
-    );
+  background: linear-gradient(90deg, #003ca8, #0b2e71);
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .applyButton:hover {
@@ -160,7 +148,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1399px) {
   .inner {
     gap: 18px;
   }
@@ -168,8 +156,6 @@
   .brand {
     padding-right: 20px;
   }
-
-  
 
   .brandContent > span {
     font-size: 10px;
@@ -190,7 +176,7 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1199px) {
   .inner {
     min-height: 95px;
   }
@@ -206,7 +192,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .inner {
     min-height: 82px;
   }
@@ -221,10 +207,7 @@
 
   .logo {
     border-radius: 11px;
-
   }
-
-  
 
   .brandContent > span {
     margin-top: 5px;
@@ -232,16 +215,29 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .inner {
+    gap: 15px;
+  }
+
+  .brand {
+    gap: 12px;
+  }
+
+  .brandContent strong {
+    font-size: 16px;
+  }
+
+  .brandContent > span {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 576px) {
   .brand {
     gap: 10px;
   }
-
- /*  .logo {
-    width: 44px;
-    height: 44px;
-    font-size: 19px;
-  } */
 
   .brandContent strong {
     font-size: 14px;

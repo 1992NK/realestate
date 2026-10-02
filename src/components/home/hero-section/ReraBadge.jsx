@@ -1,5 +1,4 @@
 import { FaCheck, FaStar } from "react-icons/fa6";
-
 import styles from "./reraBadge.module.css";
 
 const ReraBadge = () => {

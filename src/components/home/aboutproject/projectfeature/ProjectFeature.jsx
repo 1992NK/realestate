@@ -1,10 +1,4 @@
-import {
-  FaChartSimple,
-  FaLeaf,
-  FaShieldHalved,
-  FaUserGroup,
-} from "react-icons/fa6";
-
+import { FaChartSimple, FaLeaf, FaShieldHalved, FaUserGroup } from "react-icons/fa6";
 import styles from "./projectFeature.module.css";
 
 const icons = {
@@ -22,7 +16,6 @@ const ProjectFeature = ({ icon, title, subtitle }) => {
       <div className={styles.iconBox}>
         <Icon />
       </div>
-
       <div className={styles.content}>
         <p className={styles.title}>{title}</p>
         <p className={styles.subtitle}>{subtitle}</p>

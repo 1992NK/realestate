@@ -5,7 +5,6 @@ import {
   FaRoad,
   FaUsers,
 } from "react-icons/fa6";
-
 import styles from "./heroStatCard.module.css";
 
 const iconMap = {
@@ -26,20 +25,12 @@ const HeroStatCard = ({ item }) => {
       </div>
 
       <div className={styles.content}>
-        {item.label && (
-          <span className={styles.label}>{item.label}</span>
-        )}
+        {item.label && <span className={styles.label}>{item.label}</span>}
 
         <strong className={styles.value}>{item.value}</strong>
 
         {item.description && (
-          <span
-            className={
-              item.icon === "road"
-                ? styles.roadDescription
-                : styles.description
-            }
-          >
+          <span className={item.icon === "road" ? styles.roadDescription : styles.description}>
             {item.description}
           </span>
         )}

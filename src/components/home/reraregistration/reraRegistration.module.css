@@ -1,21 +1,9 @@
 .reraRegistration {
   position: relative;
-
   width: 100%;
-
   padding: 14px 0 16px;
-
-  overflow: hidden;
-
-  background:
-    linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #fbfcfd 65%,
-      #f6f8fa 100%
-    );
-
   border-bottom: 1px solid #edf0f3;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcfd 65%, #f6f8fa 100%);
 }
 
 .wrapper {
@@ -24,202 +12,98 @@
   align-items: center;
 }
 
-
-/* ===================================
-   REGISTRATION TOP BAR
-=================================== */
-
 .registrationRow {
-  position: relative;
-
   display: inline-flex;
   align-items: center;
-
   width: fit-content;
   max-width: 100%;
-
-  padding-left: 33px;
-}
-
-.logoBox {
-  position: absolute;
-
-  left: 0;
-  top: 50%;
-
-  z-index: 2;
-
-  width: 66px;
-  height: 66px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transform: translateY(-50%);
-
-  border-radius: 50%;
-
-  background-color: #f2c04c;
-
-  box-shadow:
-    0 3px 8px rgba(0, 0, 0, 0.14);
-}
-
-.logo {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
 }
 
 .registrationBar {
-  display: flex;
-  align-items: center;
-
   width: fit-content;
   max-width: 100%;
-
   min-height: 42px;
-
+  display: flex;
+  align-items: center;
   gap: 13px;
-
-  padding:
-    7px
-    26px
-    7px
-    49px;
-
+  padding: 7px 26px;
   border: 2px solid #e0a928;
-
   border-radius: 30px;
-
-  background:
-    linear-gradient(
-      90deg,
-      #233e61 0%,
-      #153457 55%,
-      #082c55 100%
-    );
-
-  box-shadow:
-    0 3px 7px rgba(11, 45, 79, 0.18);
-
+  background: linear-gradient(90deg, #233e61 0%, #153457 55%, #082c55 100%);
+  box-shadow: 0 3px 7px rgba(11, 45, 79, 0.18);
   white-space: nowrap;
 }
 
 .registrationLabel {
   flex-shrink: 0;
-
   color: #ffffff;
-
   font-size: 15px;
   font-weight: 500;
-
   letter-spacing: 0.2px;
 }
 
 .divider {
-  display: block;
-
   width: 1px;
   height: 18px;
-
   flex-shrink: 0;
-
-  background-color: rgba(255, 255, 255, 0.75);
+  display: block;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .registrationNumber {
   flex-shrink: 0;
-
   color: #f6c54e;
-
   font-size: 17px;
   font-weight: 800;
-
   letter-spacing: 0.4px;
 }
 
-
-/* ===================================
-   BOTTOM CONTENT
-=================================== */
-
 .content {
   width: 100%;
-
   margin-top: 13px;
-
   text-align: center;
 }
 
 .smallHeading {
   margin: 0 0 1px;
-
   color: #394353;
-
   font-size: 12px;
-  font-weight: 500;
-
   line-height: 1.2;
+  font-weight: 500;
 }
 
 .title {
   margin: 0;
-
   color: #122a4a;
-
   font-family: var(--font-league-spartan), sans-serif;
-
   font-size: clamp(22px, 1.7vw, 31px);
-  font-weight: 700;
-
   line-height: 1.05;
+  font-weight: 700;
 }
 
 .description {
   margin: 5px 0 0;
-
   color: #607080;
-
   font-size: 11px;
-  font-weight: 400;
-
   line-height: 1.4;
+  font-weight: 400;
 }
 
-
-/* ===================================
-   TABLET
-=================================== */
-
-@media (max-width: 1024px) {
-  .reraRegistration {
-    padding: 14px 0 15px;
+@media (max-width: 1399px) {
+  .registrationBar {
+    padding: 7px 24px;
   }
 
-  .registrationRow {
-    padding-left: 29px;
+  .title {
+    font-size: 28px;
   }
+}
 
-  .logoBox {
-    width: 59px;
-    height: 59px;
-  }
-
+@media (max-width: 1199px) {
   .registrationBar {
     min-height: 39px;
-
     gap: 11px;
-
-    padding:
-      6px
-      21px
-      6px
-      43px;
+    padding: 6px 21px;
   }
 
   .registrationLabel {
@@ -243,42 +127,29 @@
   }
 }
 
+@media (max-width: 991px) {
+  .reraRegistration {
+    padding: 13px 0 15px;
+  }
 
-/* ===================================
-   MOBILE
-=================================== */
+  .registrationBar {
+    padding: 6px 18px;
+  }
 
-@media (max-width: 768px) {
+  .title {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 767px) {
   .reraRegistration {
     padding: 13px 0 17px;
   }
 
-  .registrationRow {
-    width: fit-content;
-    max-width: 100%;
-
-    padding-left: 25px;
-  }
-
-  .logoBox {
-    width: 52px;
-    height: 52px;
-  }
-
   .registrationBar {
-    width: fit-content;
-    max-width: 100%;
-
     min-height: 36px;
-
     gap: 8px;
-
-    padding:
-      6px
-      16px
-      6px
-      36px;
-
+    padding: 6px 16px;
     border-width: 1.5px;
   }
 
@@ -292,7 +163,6 @@
 
   .registrationNumber {
     font-size: 12px;
-
     letter-spacing: 0.2px;
   }
 
@@ -306,47 +176,21 @@
 
   .title {
     font-size: 20px;
-
     line-height: 1.1;
   }
 
   .description {
     max-width: 620px;
-
-    margin:
-      4px
-      auto
-      0;
-
+    margin: 4px auto 0;
     font-size: 9.5px;
   }
 }
 
-
-/* ===================================
-   SMALL MOBILE
-=================================== */
-
 @media (max-width: 576px) {
-  .registrationRow {
-    padding-left: 22px;
-  }
-
-  .logoBox {
-    width: 46px;
-    height: 46px;
-  }
-
   .registrationBar {
     min-height: 34px;
-
     gap: 6px;
-
-    padding:
-      5px
-      11px
-      5px
-      31px;
+    padding: 5px 11px;
   }
 
   .registrationLabel {
@@ -367,57 +211,5 @@
 
   .description {
     font-size: 9px;
-  }
-}
-
-
-/* ===================================
-   EXTRA SMALL MOBILE
-=================================== */
-
-@media (max-width: 420px) {
-  .registrationRow {
-    padding-left: 20px;
-  }
-
-  .logoBox {
-    width: 42px;
-    height: 42px;
-  }
-
-  .registrationBar {
-    min-height: 31px;
-
-    gap: 5px;
-
-    padding:
-      5px
-      8px
-      5px
-      28px;
-  }
-
-  .registrationLabel {
-    font-size: 8px;
-  }
-
-  .divider {
-    height: 12px;
-  }
-
-  .registrationNumber {
-    font-size: 8.5px;
-  }
-
-  .smallHeading {
-    font-size: 9px;
-  }
-
-  .title {
-    font-size: 17px;
-  }
-
-  .description {
-    font-size: 8.5px;
   }
 }

@@ -30,7 +30,7 @@ export const aboutProjectData = {
   ],
 
   certificate: {
-    src: "/images/home/about-project/rera-certificate.webp",
+    src: "/images/about-project/rera-certificate.webp",
     alt: "Haryana RERA Registration Certificate",
   },
 };

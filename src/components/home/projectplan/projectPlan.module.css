@@ -6,56 +6,54 @@
 }
 
 .headingWrapper {
-  text-align: center;
   margin-bottom: 4px;
+  text-align: center;
 }
 
 .title {
-    color: #141414;
-    font-family: var(--font-league-spartan), sans-serif;
-    letter-spacing: -1.5px;
-    margin: 0;
-    font-size: clamp(44px, 4vw, 56px);
-    font-weight: 600;
-    line-height: 1;
+  margin: 0;
+  color: #141414;
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: clamp(44px, 4vw, 56px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1.5px;
 }
 
-.subtitle{
-    color: #141414;
-    margin: 0 0 14px;
-    font-size: clamp(16px, 1vw, 16px);
-    font-weight: 400;
-    line-height: 27px;
-    margin-top: 15px;
+.subtitle {
+  margin: 15px 0 14px;
+  color: #141414;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
 }
 
 .planWrapper {
   position: relative;
-
   aspect-ratio: 1.225 / 1;
-
   margin: 0 auto;
-
   overflow: hidden;
-
   border: 2px solid #d5a31b;
   border-radius: 6px;
-
   background: #f4f4f4;
 }
 
 .planImage {
-  object-fit: contain;
-  object-position: center;
-
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
+@media (max-width: 1399px) {
+  .projectPlan {
+    padding: 52px 0 68px;
+  }
 
-/* =========================
-   LARGE TABLET
-========================= */
+  .planWrapper {
+    width: min(100%, 1100px);
+  }
+}
 
 @media (max-width: 1199px) {
   .projectPlan {
@@ -66,11 +64,6 @@
     width: min(100%, 950px);
   }
 }
-
-
-/* =========================
-   TABLET
-========================= */
 
 @media (max-width: 991px) {
   .projectPlan {
@@ -92,11 +85,6 @@
     border-radius: 5px;
   }
 }
-
-
-/* =========================
-   SMALL TABLET
-========================= */
 
 @media (max-width: 767px) {
   .projectPlan {
@@ -121,12 +109,7 @@
   }
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .projectPlan {
     padding: 35px 0 42px;
   }
@@ -145,24 +128,5 @@
   .planWrapper {
     width: 100%;
     border-radius: 4px;
-  }
-}
-
-
-/* =========================
-   VERY SMALL MOBILE
-========================= */
-
-@media (max-width: 380px) {
-  .projectPlan {
-    padding: 30px 0 38px;
-  }
-
-  .title {
-    font-size: 18px;
-  }
-
-  .subtitle {
-    font-size: 9px;
   }
 }

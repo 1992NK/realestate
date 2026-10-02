@@ -1,13 +1,7 @@
 .ticker {
   width: 100%;
   overflow: hidden;
-  background:
-    linear-gradient(
-      90deg,
-      #062e70 0%,
-      #064d9b 48%,
-      #042a63 100%
-    );
+  background: linear-gradient(90deg, #062e70 0%, #064d9b 48%, #042a63 100%);
 }
 
 .inner {
@@ -33,14 +27,14 @@
 }
 
 .updateLabel {
+  min-height: 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 24px;
   padding: 0 23px;
   border-radius: 7px;
   background: #ffc629;
-  color: #000;
+  color: #000000;
   font-size: 12px;
   font-weight: 600;
   white-space: nowrap;
@@ -53,9 +47,9 @@
 }
 
 .tickerTrack {
+  width: max-content;
   display: flex;
   align-items: center;
-  width: max-content;
   animation: tickerMove 35s linear infinite;
 }
 
@@ -78,7 +72,7 @@
   width: 2px;
   height: 19px;
   flex-shrink: 0;
-  background: #fff;
+  background: #ffffff;
 }
 
 @keyframes tickerMove {
@@ -91,11 +85,34 @@
   }
 }
 
-@media (max-width: 900px) {
-  .inner {
-    min-height: 40px;
+@media (max-width: 1399px) {
+  .updateBox {
+    gap: 12px;
+    padding-right: 20px;
   }
 
+  .tickerItem {
+    gap: 22px;
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .updateBox {
+    padding-right: 16px;
+  }
+
+  .updateLabel {
+    padding: 0 18px;
+  }
+
+  .tickerItem {
+    gap: 18px;
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 991px) {
   .updateBox {
     gap: 8px;
     padding-right: 12px;
@@ -119,5 +136,38 @@
 
   .divider {
     height: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .updateLabel {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .tickerItem {
+    gap: 12px;
+    padding-left: 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .updateBox {
+    padding-right: 8px;
+  }
+
+  .updateLabel {
+    min-height: 30px;
+    padding: 0 8px;
+  }
+
+  .tickerItem {
+    gap: 10px;
+    padding-left: 10px;
+  }
+
+  .divider {
+    height: 13px;
   }
 }
