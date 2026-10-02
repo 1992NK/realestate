@@ -1,6 +1,6 @@
 .stepsSection {
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   border-bottom: 1px solid #e3e8ef;
 }
 
@@ -8,40 +8,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: max-content;
   max-width: 100%;
-
   margin: 0 auto;
-
-  border-bottom: 2px solid #05368f;;
+  border-bottom: 2px solid #05368f;
 }
 
 .step {
   display: flex;
   align-items: center;
   gap: 7px;
-
   padding: 17px 28px;
-
   white-space: nowrap;
 }
 
 .number {
   width: 23px;
   height: 23px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
-
   border-radius: 50%;
-
-  background: #05368f;;
-  color: #ffffff;
-
+  background: #05368f;
+  color: #fff;
   font-size: 11px;
   font-weight: 700;
 }
@@ -50,6 +40,28 @@
   font-size: 12px;
   font-weight: 600;
   color: #454b56;
+}
+
+@media (max-width: 1399px) {
+  .step {
+    padding: 17px 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .step {
+    padding: 16px 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .step {
+    padding: 15px 18px;
+  }
+
+  .text {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -73,5 +85,22 @@
 
   .text {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .step {
+    gap: 6px;
+    padding: 13px 12px;
+  }
+
+  .number {
+    width: 20px;
+    height: 20px;
+    font-size: 9px;
+  }
+
+  .text {
+    font-size: 9px;
   }
 }

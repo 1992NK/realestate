@@ -1,5 +1,4 @@
 import { registrationSteps } from "@/data/registerData";
-
 import styles from "./registerSteps.module.css";
 
 const RegisterSteps = () => {
