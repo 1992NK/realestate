@@ -3,7 +3,7 @@ export const locationMapData = {
   title: "Location Map",
 
   description:
-    "Located in the rapidly developing Sector 3, Pataudi, near the iconic Pataudi Palace, Jay Shree Royal Greens is a premium plotted development offering an excellent opportunity to own affordable plots under the Deen Dayal Jan Awas Yojana (DDJAY). Strategically positioned with seamless connectivity to Gurugram, NH-8, Dwarka Expressway, KMP Expressway, IMT Manesar, and upcoming infrastructure corridors, the project provides the perfect balance of modern convenience and peaceful living.",
+    "Avenue 106 Dharuhera, located in Sector 19, offers convenient connectivity to major roads and important destinations. NH-48 is approximately 5 minutes away, with access to IMT Manesar, Gurugram, Rewari, Bawal, and other key NCR locations. Nearby schools, healthcare facilities, and employment hubs further add to the convenience of this well-connected residential location.",
 
   image: "/images/location-map.png",
   imageAlt: "Jay Shree Royal Greens location map",

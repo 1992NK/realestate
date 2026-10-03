@@ -9,6 +9,7 @@ import {
 
 import { brandData, contactData, headerActions } from "@/data/headerData";
 import styles from "./contactBar.module.css";
+import Image from "next/image";
 
 const contactIcons = {
   email: FaEnvelope,
@@ -21,13 +22,7 @@ const ContactBar = ({ isMenuOpen, onMenuOpen }) => {
     <div className={styles.contactBar}>
       <div className={`container ${styles.inner}`}>
         <a href="#home" className={styles.brand}>
-          <span className={styles.logo}>
-            <FaHouseChimney />
-          </span>
-          <span className={styles.brandContent}>
-            <strong>{brandData.title}</strong>
-            <span>{brandData.subtitle}</span>
-          </span>
+          <Image src="/images/header/logo.jpg" alt="Haryana Logo" width={75} height={85} />
         </a>
 
         <div className={styles.contactList}>

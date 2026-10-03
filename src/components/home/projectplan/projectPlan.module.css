@@ -12,7 +12,7 @@
 
 .title {
   margin: 0;
-  color: #141414;
+  color: #046629;
   font-family: var(--font-league-spartan), sans-serif;
   font-size: clamp(44px, 4vw, 56px);
   font-weight: 600;

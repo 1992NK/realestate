@@ -135,11 +135,7 @@
 }
 
 .table thead {
-  background: linear-gradient(
-    180deg,
-    #0d528a 0%,
-    #07325d 100%
-  );
+      background: linear-gradient(90deg, #ee7c0c, #d36f0c);
 }
 
 .table th {
@@ -183,15 +179,15 @@
 }
 
 .table tbody tr:nth-child(odd) {
-  background: #f8fbfe;
+  background: #ffeddb;
 }
 
 .table tbody tr:nth-child(even) {
-  background: #eaf4fb;
+  background: #fff;
 }
 
 .table tbody tr:hover {
-  background: #e3f0f9;
+  background: #ffeddb;
 }
 
 /* =========================
@@ -211,11 +207,7 @@
   min-height: 39px;
   padding: 9px 14px;
   border-radius: 8px;
-  background: linear-gradient(
-    180deg,
-    #efc05c 0%,
-    #bc790b 100%
-  );
+  background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
   box-shadow: 0 4px 9px rgba(147, 89, 4, 0.25);
   color: #ffffff;
   font-size: 13px;
@@ -235,11 +227,7 @@
 
 .applyButton:hover {
   transform: translateY(-2px);
-  background: linear-gradient(
-    180deg,
-    #f4c96d 0%,
-    #a96b07 100%
-  );
+  background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
   box-shadow: 0 6px 14px rgba(147, 89, 4, 0.3);
 }
 
@@ -258,11 +246,7 @@
   margin-top: 10px;
   padding: 11px 18px;
   border-radius: 12px;
-  background: linear-gradient(
-    90deg,
-    #f5faff 0%,
-    #e7f3fc 100%
-  );
+      background: #fffbf1eb;
 }
 
 .chargeIcon {

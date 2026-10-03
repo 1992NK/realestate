@@ -34,8 +34,8 @@
 }
 
 .content {
-  width: 62%;
-  max-width: 780px;
+  width: 100%;
+  max-width: 830px;
   min-height: 390px;
 }
 
@@ -46,8 +46,8 @@
   gap: 10px;
   padding: 9px 18px;
   border-radius: 100px;
-  background: #f5d59a;
-  color: #141414;
+  background: #ec7f0a;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
@@ -72,25 +72,25 @@
   font-family: var(--font-league-spartan), sans-serif;
   font-size: clamp(58px, 5.2vw, 84px);
   line-height: 0.9;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -2px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .title span:first-child {
-  color: #141414;
+  color: #0c8035;
 }
 
 .title span:last-child {
   margin-top: 10px;
-  color: #0b4286;
+  color: #e98410;
 }
 
 .subtitle {
   margin-top: 0;
-  color: #141414;
-  font-size: 18px;
-  font-weight: 600;
+  color: #0c7e38;
+  font-size: 28px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -103,7 +103,7 @@
   padding: 12px 17px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
-  color: #141414;
+  color: #0c7e36;
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
@@ -112,7 +112,7 @@
 
 .location svg {
   flex-shrink: 0;
-  color: #0b4286;
+  color: #036335;
   font-size: 26px;
 }
 

@@ -75,7 +75,7 @@
   place-items: center;
   border-radius: 50%;
   background: #f0f4fa;
-  color: #0a397d;
+  color: #0a7733;
   font-size: 14px;
 }
 
@@ -91,14 +91,14 @@
 }
 
 .contactContent > span {
-  color: #757d89;
+  color: #141414;
   font-size: 13px;
 }
 
 .contactContent strong {
-  color: #0a1f45;
+  color: #066f2e;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -112,7 +112,7 @@
   gap: 15px;
   padding: 7px 8px 7px 24px;
   border-radius: 50px;
-  background: linear-gradient(90deg, #003ca8, #0b2e71);
+  background: linear-gradient(90deg, #ee7c0c, #d36f0c);
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -132,7 +132,7 @@
   place-items: center;
   border-radius: 50%;
   background: #ffffff;
-  color: #0b3979;
+  color: #ec7e0d;
 }
 
 .menuButton {

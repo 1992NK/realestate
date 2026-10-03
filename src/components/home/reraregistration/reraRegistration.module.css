@@ -27,9 +27,9 @@
   align-items: center;
   gap: 13px;
   padding: 7px 26px;
-  border: 2px solid #e0a928;
+  border: 2px solid #ee7c0c;
   border-radius: 30px;
-  background: linear-gradient(90deg, #233e61 0%, #153457 55%, #082c55 100%);
+      background: linear-gradient(90deg, #ee7c0c, #d36f0c);;
   box-shadow: 0 3px 7px rgba(11, 45, 79, 0.18);
   white-space: nowrap;
 }
@@ -52,7 +52,7 @@
 
 .registrationNumber {
   flex-shrink: 0;
-  color: #f6c54e;
+  color: #fff;
   font-size: 17px;
   font-weight: 800;
   letter-spacing: 0.4px;

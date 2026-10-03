@@ -19,15 +19,15 @@ export const contactData = [
     id: 1,
     type: "email",
     label: "Email Us",
-    value: "support@deendayalaffordableplot.com",
-    href: "mailto:support@deendayalaffordableplot.com",
+    value: "info@deendayaljanaawasyojna.org",
+    href: "mailto:info@deendayaljanaawasyojna.org",
   },
   {
     id: 2,
     type: "phone",
     label: "Helpline No.",
-    value: "+91 9718-585-585",
-    href: "tel:+919718585585",
+    value: "+91 +91 987-654-3210",
+    href: "tel:+919876543210",
   },
   
 ];
@@ -45,8 +45,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    label: "Floor Plan",
-    href: "#floor-plan",
+    label: "project layout",
+    href: "#project-layout",
   },
   {
     id: 4,

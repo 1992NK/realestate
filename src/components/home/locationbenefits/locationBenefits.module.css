@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: radial-gradient(circle at 25% 50%, rgba(24, 74, 116, 0.22), transparent 38%), linear-gradient(115deg, #041e38 0%, #031a31 50%, #00172d 100%);
+    background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
   scroll-margin-top: 90px;
 }
 
@@ -75,7 +75,7 @@
 
 .benefitsGrid {
   width: 100%;
-  max-width: 750px;
+  max-width: 830px;
   margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -85,7 +85,7 @@
 .benefitCard {
   min-height: 58px;
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr) 1px 100px;
+  grid-template-columns: 48px minmax(0, 1fr) 1px 150px;
   align-items: center;
   gap: 12px;
   padding: 5px 18px 5px 12px;
@@ -131,7 +131,7 @@
 }
 
 .time {
-  color: #efbd55;
+  color: #fff;
   font-size: 15px;
   font-weight: 600;
   white-space: nowrap;

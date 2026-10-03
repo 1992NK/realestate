@@ -20,7 +20,7 @@ const LocationBenefits = () => {
           <span className={styles.headingLine} />
 
           <p className={styles.description}>
-            Strategically located in Sector 3, Pataudi near the iconic Pataudi Palace, Jay Shree Royal Greens enjoys excellent connectivity to Gurugram, NH-8, and key industrial corridors. The project offers seamless access to IMT Manesar, Dwarka Expressway, and KMP Expressway, making daily commuting smooth and convenient. Surrounded by greenery and a peaceful environment, it provides a perfect escape from city congestion while staying well-connected to urban essentials.
+            Strategically located in Sector 19, Dharuhera, Avenue 106 offers excellent connectivity to major highways, expressways and key destinations across the NCR region. The project's prime location ensures easy access to work, education, healthcare and lifestyle hubs, making it a smart choice for modern families.
           </p>
 
           <div className={styles.benefitsGrid}>

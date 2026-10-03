@@ -2,7 +2,7 @@ export const reraRegistrationData = {
   registrationLabel: "Rera Registration No.",
 
   registrationNumber:
-    "HARERA/GGM/1023/755/2025/126",
+    "HRERA-PKL-RWR-824-2026",
 
   heading: "Allotment of",
 

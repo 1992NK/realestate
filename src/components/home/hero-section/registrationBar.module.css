@@ -2,7 +2,7 @@
   position: relative;
   z-index: 5;
   width: 100%;
-  background: linear-gradient(90deg, #08284e, #063866, #08284e);
+    background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
 }
 
 .container {
@@ -33,10 +33,10 @@
 }
 
 .amount {
-  color: #f1c56e;
-  font-size: 38px;
+  color: #fff;
+  font-size: 50px;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .only {
@@ -51,8 +51,8 @@
   gap: 18px;
   padding: 11px 13px 11px 24px;
   border-radius: 8px;
-  background: linear-gradient(135deg, #f8dfa4, #eec26c);
-  color: #141414;
+  background: linear-gradient(90deg, #ee7c0c, #d36f0c);
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -64,8 +64,8 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #082d59;
-  color: #ffffff;
+  background: #fff;
+  color: #ee7c0c;
 }
 
 @media (max-width: 1399px) {

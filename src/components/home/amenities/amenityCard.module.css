@@ -27,7 +27,7 @@
 
 .content{
     z-index: 2;
-    background: linear-gradient(115deg, #12365b 0%, #08294a 55%, #05233f 100%);
+        background: linear-gradient(90deg, #ee7c0c, #d36f0c);
     border-radius: 0px 0px 17px 17px;
     align-items: center;
     min-height: 70px;

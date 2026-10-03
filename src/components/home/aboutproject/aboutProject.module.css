@@ -25,7 +25,7 @@
   align-items: center;
   gap: 15px;
   margin-bottom: 12px;
-  color: #141414;
+  color: #ec7c0c;
   font-family: var(--font-heading), sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -42,7 +42,7 @@
 
 .heading {
   margin: 0;
-  color: #141414;
+  color: #0a7733;
   font-family: var(--font-league-spartan), sans-serif;
   font-size: clamp(44px, 4vw, 56px);
   font-weight: 500;
@@ -56,8 +56,7 @@
 
 .subheading {
   margin: 10px 0 17px;
-  color: #103f78;
-  font-family: var(--font-heading), sans-serif;
+  color: #0a7733;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
@@ -108,7 +107,7 @@
   width: min(100%, 500px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background-color: #e1effa;
+  background-color: #e5ffef;
   transform: translate(-50%, -50%);
 }
 
