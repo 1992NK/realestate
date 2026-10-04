@@ -11,7 +11,7 @@
   width: max-content;
   max-width: 100%;
   margin: 0 auto;
-  border-bottom: 2px solid #05368f;
+  border-bottom: 2px solid #07702e;
 }
 
 .step {
@@ -30,7 +30,7 @@
   justify-content: center;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #05368f;
+  background: #07702e;
   color: #fff;
   font-size: 11px;
   font-weight: 700;

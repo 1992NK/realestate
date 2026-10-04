@@ -1,460 +1,117 @@
-.priceSection {
-  position: relative;
+.priceList {
   width: 100%;
-  padding: 70px 0;
-  overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 5% 0%,
-      rgba(8, 48, 91, 0.035) 0,
-      rgba(8, 48, 91, 0.035) 120px,
-      transparent 121px
-    ),
-    radial-gradient(
-      circle at 95% 5%,
-      rgba(8, 48, 91, 0.025) 0,
-      rgba(8, 48, 91, 0.025) 150px,
-      transparent 151px
-    ),
-    #fbfbfa;
+  padding: 60px 0 70px;
+  background: #f4f8f5;
+  scroll-margin-top: 100px;
 }
-
-/* =========================
-   Heading
-========================= */
 
 .headingWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  max-width: 700px;
+  margin: 0 auto 35px;
+  text-align: center;
 }
 
-.headingTop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  width: 100%;
-  max-width: 410px;
-  margin-bottom: 4px;
-}
-
-.headingLine {
-  width: 145px;
-  height: 1px;
-  background: #d79a22;
-}
-
-.homeIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #d79a22;
-  font-size: 21px;
+.smallTitle {
+  display: block;
+  margin-bottom: 8px;
+  color: #087331;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .title {
-    color: #141414;
-    font-family: var(--font-league-spartan), sans-serif;
-    letter-spacing: -1.5px;
-    margin: 0;
-    font-size: clamp(44px, 4vw, 56px);
-    font-weight: 600;
-    line-height: 1;
-}
-
-/* =========================
-   Important Note
-========================= */
-
-.importantNote {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 0 0 16px;
-  padding: 9px 24px;
-  border: 1px solid #dfa832;
-  border-radius: 9px;
-  background: rgba(255, 251, 241, 0.92);
-}
-
-.infoIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #b97a0c;
-  font-size: 22px;
-}
-
-.importantNote p {
   margin: 0;
-  color: #0a315e;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.importantNote strong {
-  color: #a66c08;
-  font-weight: 700;
-}
-
-/* =========================
-   Main Card
-========================= */
-
-.tableCard {
-  padding: 12px;
-  border-radius: 15px;
-  background: #ffffff;
-  box-shadow:
-    0 8px 30px rgba(9, 43, 89, 0.07),
-    0 2px 8px rgba(9, 43, 89, 0.04);
-}
-
-/* =========================
-   Table
-========================= */
-
-.tableScroll {
-  width: 100%;
-  overflow-x: auto;
-  border-radius: 11px;
-  scrollbar-width: thin;
-  scrollbar-color: #c1cfdd #edf4f9;
-}
-
-.table {
-  width: 100%;
-  min-width: 1120px;
-  border-collapse: separate;
-  border-spacing: 0;
-  overflow: hidden;
-}
-
-.table thead {
-      background: linear-gradient(90deg, #ee7c0c, #d36f0c);
-}
-
-.table th {
-  padding: 15px 10px;
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.3;
-  text-align: center;
-  vertical-align: middle;
-  white-space: normal;
-}
-
-.table th:first-child {
-  width: 55px;
-  border-top-left-radius: 10px;
-}
-
-.table th:last-child {
-  width: 145px;
-  border-right: 0;
-  border-top-right-radius: 10px;
-}
-
-.table td {
-  padding: 12px 10px;
-  border-right: 1px solid #d3e0eb;
-  border-bottom: 1px solid #d3e0eb;
-  color: #082d5a;
-  font-size: 13px;
+  color: #141414;
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: clamp(42px, 4vw, 56px);
   font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
+  line-height: 1;
+  letter-spacing: -1.5px;
 }
 
-.table td:last-child {
-  border-right: 0;
+.subtitle {
+  margin: 14px 0 0;
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
 }
 
-.table tbody tr:nth-child(odd) {
-  background: #ffeddb;
-}
-
-.table tbody tr:nth-child(even) {
-  background: #fff;
-}
-
-.table tbody tr:hover {
-  background: #ffeddb;
-}
-
-/* =========================
-   Apply Button
-========================= */
-
-.applyCell {
-  padding: 8px 12px !important;
-}
-
-.applyButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  min-width: 120px;
-  min-height: 39px;
-  padding: 9px 14px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
-  box-shadow: 0 4px 9px rgba(147, 89, 4, 0.25);
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
-}
-
-.applyButton svg {
-  flex-shrink: 0;
-  font-size: 14px;
-  transition: transform 0.25s ease;
-}
-
-.applyButton:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
-  box-shadow: 0 6px 14px rgba(147, 89, 4, 0.3);
-}
-
-.applyButton:hover svg {
-  transform: translateX(3px);
-}
-
-/* =========================
-   Additional Charges
-========================= */
-
-.additionalCharges {
+.planWrapper {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 10px;
-  padding: 11px 18px;
-  border-radius: 12px;
-      background: #fffbf1eb;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.chargeIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-  border: 1px solid #e2ac3c;
-  border-radius: 50%;
-  background: #fff6df;
-  color: #bd7d11;
-  font-size: 24px;
+@media (max-width: 1399px) {
+  .priceList {
+    padding: 55px 0 65px;
+  }
 }
-
-.chargeContent {
-  flex: 1;
-}
-
-.chargeContent h3 {
-  margin: 0 0 2px;
-  color: #092d58;
-  font-size: 15px;
-  font-weight: 800;
-}
-
-.chargeContent ol {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.chargeContent li {
-  padding-left: 6px;
-  color: #0a315e;
-  font-size: 13px;
-  line-height: 1.45;
-}
-
-/* =========================
-   Responsive
-========================= */
 
 @media (max-width: 1199px) {
-  .priceSection {
-    padding: 60px 0;
+  .headingWrapper {
+    margin-bottom: 30px;
   }
 
-  .importantNote {
-    padding: 10px 18px;
-  }
-
-  .tableCard {
-    padding: 10px;
+  .planWrapper {
+    gap: 26px;
   }
 }
 
 @media (max-width: 991px) {
-  .priceSection {
-    padding: 55px 0;
-  }
-
-  .headingWrapper {
-    margin-bottom: 18px;
+  .priceList {
+    padding: 50px 0 60px;
   }
 
   .title {
-    font-size: 42px;
+    font-size: 44px;
   }
 
-  .importantNote {
-    align-items: flex-start;
-  }
-
-  .infoIcon {
-    margin-top: 1px;
-  }
-
-  .tableScroll {
-    padding-bottom: 4px;
+  .subtitle {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 767px) {
-  .priceSection {
-    padding: 45px 0;
+  .priceList {
+    padding: 45px 0 50px;
   }
 
-  .headingTop {
-    max-width: 300px;
-    gap: 10px;
+  .headingWrapper {
+    margin-bottom: 25px;
   }
 
-  .headingLine {
-    width: 100px;
+  .smallTitle {
+    font-size: 12px;
   }
 
-  .homeIcon {
-    font-size: 18px;
+  .title {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .planWrapper {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .priceList {
+    padding: 38px 0 45px;
   }
 
   .title {
     font-size: 34px;
   }
 
-  .importantNote {
-    gap: 10px;
-    margin-bottom: 13px;
-    padding: 10px 12px;
-    border-radius: 7px;
-  }
-
-  .importantNote p {
-    font-size: 12px;
-  }
-
-  .infoIcon {
-    font-size: 18px;
-  }
-
-  .tableCard {
-    padding: 8px;
-    border-radius: 12px;
-  }
-
-  .table {
-    min-width: 1080px;
-  }
-
-  .table th {
-    padding: 12px 8px;
-    font-size: 12px;
-  }
-
-  .table td {
-    padding: 10px 8px;
-    font-size: 12px;
-  }
-
-  .applyButton {
-    min-width: 108px;
-    min-height: 36px;
-    font-size: 12px;
-  }
-
-  .additionalCharges {
-    align-items: flex-start;
-    gap: 12px;
-    padding: 12px;
-  }
-
-  .chargeIcon {
-    width: 42px;
-    height: 42px;
-    font-size: 20px;
-  }
-
-  .chargeContent h3 {
-    font-size: 13px;
-  }
-
-  .chargeContent li {
-    padding-left: 2px;
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 575px) {
-  .priceSection {
-    padding: 38px 0;
-  }
-
-  .headingTop {
-    max-width: 250px;
-  }
-
-  .headingLine {
-    width: 82px;
-  }
-
-  .title {
-    font-size: 30px;
-  }
-
-  .importantNote {
-    padding: 9px 10px;
-  }
-
-  .importantNote p {
-    font-size: 11px;
-    line-height: 1.45;
-  }
-
-  .tableCard {
-    padding: 6px;
-  }
-
-  .additionalCharges {
-    gap: 10px;
-  }
-
-  .chargeIcon {
-    width: 38px;
-    height: 38px;
-    font-size: 18px;
-  }
-
-  .chargeContent ol {
-    padding-left: 17px;
+  .headingWrapper {
+    margin-bottom: 22px;
   }
 }

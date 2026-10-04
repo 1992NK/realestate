@@ -19,7 +19,7 @@
   align-items: center;
   gap: 9px;
   padding: 0 20px;
-  background: linear-gradient(90deg, #003ca8, #0b2e71);
+ background: linear-gradient(135deg, #077430, #045d25);
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -137,14 +137,14 @@
 }
 
 .radioOption input:checked + span {
-  border-color: #05368f;
-  background: #05368f;
+  border-color: #ee7c0c;
+  background: linear-gradient(90deg, #ee7c0c, #d36f0c);
   color: #fff !important;
 }
 
 .radioOption input:checked + span::before {
   border: 3px solid #fff;
-  background: #05368f;
+  background: #ee7c0c;
 }
 
 .divider {
@@ -161,9 +161,9 @@
   align-items: center;
   padding: 8px 12px;
   margin-bottom: 20px;
-  border: 1px solid #05368e;
+  border: 1px solid #db730c;
   border-radius: 6px;
-  background: #edf3ff;
+  background: #fff5ec;
   cursor: pointer;
 }
 
@@ -198,7 +198,7 @@
 }
 
 .plotCard:hover {
-  border-color: #05368f;
+  border-color: #db730c;;
   transform: translateY(-1px);
 }
 
@@ -227,14 +227,14 @@
   align-items: center;
   padding: 4px 10px;
   border-radius: 20px;
-  background: #05368f;
+  background: #db730c;;
   color: #fff;
   font-size: 11px;
 }
 
 .activePlot {
-  border: 2px solid #05368f;
-  background: #edf3ff;
+  border: 2px solid #db730c;;
+  background: #fff5ec;;
 }
 
 .submitBox {
@@ -256,7 +256,7 @@
   padding: 10px 30px;
   border: 0;
   border-radius: 7px;
-  background: #05368f;
+  background: #db730c;;
   color: #fff;
   font-family: inherit;
   font-size: 14px;
@@ -266,7 +266,7 @@
 }
 
 .submitButton:hover {
-  background: #05368f;
+  background: #db730c;;
   transform: translateY(-1px);
 }
 

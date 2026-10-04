@@ -31,9 +31,9 @@ export const amenitiesData = [
   },
   {
     id: 6,
-    title: "Pickleball",
+    title: "Badminton Court ",
     image: "/images/amenities/pickleball.webp",
-    icon: "pickleball",
+    icon: "badminton",
   },
   {
     id: 7,

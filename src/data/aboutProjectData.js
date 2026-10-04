@@ -1,5 +1,5 @@
 export const aboutProjectData = {
-  id: "about-project",
+  id: "about",
 
   eyebrow: "ABOUT THE PROJECT",
 

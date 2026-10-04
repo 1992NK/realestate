@@ -5,7 +5,7 @@ import styles from "./locationBenefits.module.css";
 
 const LocationBenefits = () => {
   return (
-    <section className={styles.locationSection} id="location">
+    <section className={styles.locationSection}>
       <div className={styles.locationContainer}>
         <div className={styles.content}>
           <div className={styles.eyebrow}>

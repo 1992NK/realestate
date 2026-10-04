@@ -2,19 +2,19 @@ export const footerContactData = {
   siteOffice: {
     label: "Site Office:",
     value:
-      "Deen Dayal Affordable Plot Sector-03, Pataudi, Gurugram, Haryana - 122503",
+      "Affordable Residential Plots in Sector 19, Dharuhera",
   },
 
   phone: {
     label: "Helpline Number:",
-    value: "+91 9718-585-585",
-    href: "tel:+919718585585",
+    value: " +91 987-654-3210",
+    href: "tel:+919876543210",
   },
 
   email: {
     label: "Email Id:",
-    value: "support@deendayalaffordableplot.com",
-    href: "mailto:support@deendayalaffordableplot.com",
+    value: "info@deendayaljanaawasyojna.org",
+    href: "mailto:info@deendayaljanaawasyojna.org",
   },
 };
 

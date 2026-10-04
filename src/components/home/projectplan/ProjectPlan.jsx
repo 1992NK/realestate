@@ -8,7 +8,7 @@ const ProjectPlan = () => {
   return (
     <section
       className={styles.projectPlan}
-      id="project-plan"
+      id="payment-layout"
     >
       <div className="container">
         <div className={styles.headingWrapper}>

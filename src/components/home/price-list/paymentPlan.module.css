@@ -1,0 +1,260 @@
+.planCard {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce7df;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(5, 91, 36, 0.06);
+}
+
+.note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 9px 14px;
+  border: 1px solid #d5eadc;
+  border-radius: 7px;
+  background: #edf8f0;
+}
+
+.note svg {
+  flex-shrink: 0;
+  color: #087331;
+  font-size: 17px;
+}
+
+.note p {
+  margin: 0;
+  color: #31543c;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.note strong {
+  color: #07682d;
+  font-weight: 700;
+}
+
+.planHeading {
+  padding: 15px 18px;
+  border-radius: 7px 7px 0 0;
+  background: #087331;
+}
+
+.planHeading h3 {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #dce7df;
+  border-top: 0;
+  border-radius: 0 0 7px 7px;
+}
+
+.table {
+  width: 100%;
+  min-width: 1250px;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 14px 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  background: #0b5f2d;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table th:last-child {
+  border-right: 0;
+}
+
+.table td {
+  padding: 12px 10px;
+  border-right: 1px solid #dce7df;
+  border-bottom: 1px solid #dce7df;
+  color: #252525;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table td:last-child {
+  border-right: 0;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f3f8f4;
+}
+
+.table tbody tr:hover {
+  background: #eaf5ed;
+}
+
+.total {
+  color: #075b29 !important;
+  font-weight: 700 !important;
+  background: #e9f5ec;
+}
+
+.applyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 110px;
+  padding: 9px 13px;
+  border-radius: 6px;
+  background: #087331;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.applyButton svg {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.applyButton:hover {
+  background: #055a26;
+  transform: translateY(-1px);
+}
+
+.applyButton:hover svg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 1399px) {
+  .table {
+    min-width: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .planHeading h3 {
+    font-size: 22px;
+  }
+
+  .table {
+    min-width: 1180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .planCard {
+    padding: 10px;
+  }
+
+  .planHeading {
+    padding: 13px 15px;
+  }
+
+  .planHeading h3 {
+    font-size: 20px;
+  }
+
+  .table th {
+    padding: 12px 9px;
+    font-size: 12px;
+  }
+
+  .table td {
+    padding: 11px 9px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .planCard {
+    padding: 8px;
+  }
+
+  .note {
+    align-items: flex-start;
+    padding: 9px 10px;
+  }
+
+  .note svg {
+    margin-top: 2px;
+    font-size: 15px;
+  }
+
+  .note p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .planHeading {
+    padding: 12px;
+  }
+
+  .planHeading h3 {
+    font-size: 18px;
+  }
+
+  .table {
+    min-width: 1100px;
+  }
+
+  .applyButton {
+    min-width: 100px;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .planCard {
+    border-radius: 9px;
+  }
+
+  .note {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .note p {
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .planHeading h3 {
+    font-size: 17px;
+  }
+
+  .table th {
+    padding: 10px 8px;
+    font-size: 11px;
+  }
+
+  .table td {
+    padding: 10px 8px;
+    font-size: 11px;
+  }
+}
