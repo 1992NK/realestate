@@ -30,12 +30,17 @@ export const quotas = [
 export const plotOptions = [
   {
     id: 1,
-    size: "127.786 sq.yd.",
-    amount: "₹ 30,000 /-",
+    size: "137.01sq.yd",
+    amount: "₹ 21,000 /-",
   },
   {
     id: 2,
-    size: "161.46 sq.yd.",
-    amount: "₹ 30,000 /-",
+    size: "140.34sq.yd",
+    amount: "₹ 21,000 /-",
+  },
+  {
+    id: 3,
+    size: "160.12sq.yd",
+    amount: "₹ 21,000 /-",
   },
 ];
