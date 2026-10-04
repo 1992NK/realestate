@@ -26,7 +26,7 @@ export const contactData = [
     id: 2,
     type: "phone",
     label: "Helpline No.",
-    value: "+91 +91 987-654-3210",
+    value: "+91 987-654-3210",
     href: "tel:+919876543210",
   },
   
