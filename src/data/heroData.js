@@ -6,14 +6,14 @@ export const heroData = {
 
   subtitle: "Affordable Residential Plots in Sector 19, Dharuhera",
 
-  location: "Bang on NH-48 | A Connected Address for Your Future",
+  location: "6RG9+FC3, Sector 19, Dharuhera, Haryana 123106",
 
   registrationLabel: "Registration Amount",
   registrationAmount: "₹ 21,000/-",
   registrationSuffix: "Only",
 
-  buttonText: "Apply for Registration",
-  buttonLink: "#registration",
+  buttonText: "Apply Now",
+  buttonLink: "/register_online",
 };
 
 export const heroStats = [
@@ -24,26 +24,27 @@ export const heroStats = [
     value: "₹ 1.30 CR*",
     description: "Per Plot",
   },
+  
   {
     id: 2,
-    icon: "rupee",
-    label: "Registration Amount",
-    value: "₹ 21,000 /-",
-    description: "only",
-  },
-  {
-    id: 3,
     icon: "building",
     label: "Available PlOTS",
     value: "25 Plots",
     description: "Limited Availability",
   },
   {
-     id: 4,
+     id: 3,
     icon: "users",
     label: "",
     value: "33%",
     description: "Reserved for Womens and Govt. Employees",
+  },
+  {
+    id: 4,
+    icon: "calendar",
+    label: "Starting Date",
+    value: "11 Oct 2026",
+    description: "",
   },
   {
     id: 5,

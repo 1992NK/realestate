@@ -20,20 +20,14 @@ const HeroStatCard = ({ item }) => {
 
   return (
     <article className={styles.card}>
-      <div className={styles.icon}>
-        <Icon />
-      </div>
+      <div className={styles.icon}>{Icon && <Icon />}</div>
 
       <div className={styles.content}>
         {item.label && <span className={styles.label}>{item.label}</span>}
 
         <strong className={styles.value}>{item.value}</strong>
 
-        {item.description && (
-          <span className={item.icon === "road" ? styles.roadDescription : styles.description}>
-            {item.description}
-          </span>
-        )}
+        {item.description && <span className={item.icon === "road" ? styles.roadDescription : styles.description}>{item.description}</span>}
       </div>
     </article>
   );

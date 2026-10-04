@@ -14,17 +14,7 @@ const TopTicker = () => {
         <div className={styles.tickerViewport}>
           <div className={styles.tickerTrack}>
             {tickerData.items.map((item, index) => (
-              <div className={styles.tickerItem} key={`first-${index}`}>
-                <span>{item}</span>
-                <span className={styles.divider} />
-              </div>
-            ))}
-
-            {tickerData.items.map((item, index) => (
-              <div className={styles.tickerItem} key={`second-${index}`}>
-                <span>{item}</span>
-                <span className={styles.divider} />
-              </div>
+              <span className={styles.tickerItem} key={index}>{item}</span>
             ))}
           </div>
         </div>

@@ -2,27 +2,22 @@
   width: 100%;
 }
 
-/* ==========================
-   Contact Area
-========================== */
-
 .contactSection {
   position: relative;
   padding: 24px 0 18px;
   overflow: hidden;
   background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
- 
 }
 
-.heading{
-    color: #fff;
-    font-family: var(--font-league-spartan), sans-serif;
-    letter-spacing: -1.5px;
-    margin: 0;
-    font-size: clamp(44px, 4vw, 56px);
-    font-weight: 600;
-    line-height: 1;
-    text-align: center;
+.heading {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: clamp(44px, 4vw, 56px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  text-align: center;
 }
 
 .headingLine {
@@ -32,10 +27,6 @@
   border-radius: 20px;
   background: #d7a21e;
 }
-
-/* ==========================
-   Main Wrapper
-========================== */
 
 .contactWrapper {
   position: relative;
@@ -49,14 +40,8 @@
 .infoCard {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.92);
-  box-shadow:
-    0 8px 30px rgba(4, 50, 98, 0.08),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 30px rgba(4, 50, 98, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
 }
-
-/* ==========================
-   Form
-========================== */
 
 .formCard {
   padding: 20px;
@@ -83,9 +68,7 @@
   border: 1px solid #b7c3d2;
   border-radius: 9px;
   background: rgba(255, 255, 255, 0.55);
-  transition:
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .inputGroup:focus-within {
@@ -140,15 +123,13 @@
   min-height: 54px;
   border: 0;
   border-radius: 10px;
-      background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
+  background: linear-gradient(90deg, #077430 0%, #045d25 48%, #077430 100%);
   color: #ffffff;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .submitButton:hover {
@@ -160,19 +141,9 @@
   font-size: 22px;
 }
 
-/* ==========================
-   Information Card
-========================== */
-
 .infoCard {
   padding: 20px 30px;
-  background:
-    radial-gradient(
-      circle at 100% 30%,
-      rgba(251, 218, 150, 0.1),
-      transparent 45%
-    ),
-    rgba(255, 255, 255, 0.92);
+  background: radial-gradient(circle at 100% 30%, rgba(251, 218, 150, 0.1), transparent 45%), rgba(255, 255, 255, 0.92);
 }
 
 .infoItem {
@@ -241,13 +212,9 @@
   background: #cfd8e1;
 }
 
-/* ==========================
-   Bottom Footer
-========================== */
-
 .bottomFooter {
   padding: 13px 0 10px;
-      background-color: #114e29;
+  background-color: #114e29;
 }
 
 .bottomContent {
@@ -266,35 +233,16 @@
 .goldLine {
   flex: 1;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #e1af37
-  );
+  background: linear-gradient(90deg, transparent, #e1af37);
 }
 
-.decorativeSide:first-child .goldLine:last-child {
-  background: linear-gradient(
-    90deg,
-    #e1af37,
-    transparent
-  );
+.decorativeSide:first-child .goldLine:last-child,
+.decorativeSide:last-child .goldLine:last-child {
+  background: linear-gradient(90deg, #e1af37, transparent);
 }
 
 .decorativeSide:last-child .goldLine:first-child {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #e1af37
-  );
-}
-
-.decorativeSide:last-child .goldLine:last-child {
-  background: linear-gradient(
-    90deg,
-    #e1af37,
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, #e1af37);
 }
 
 .homeButton {
@@ -304,9 +252,7 @@
   justify-content: center;
   color: #e4af31;
   text-decoration: none;
-  transition:
-    transform 0.3s ease,
-    color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .homeButton:hover {
@@ -318,10 +264,6 @@
   font-size: 27px;
   stroke-width: 2.4;
 }
-
-/* ==========================
-   Center Footer
-========================== */
 
 .footerCenter {
   text-align: center;
@@ -366,10 +308,6 @@
   line-height: 1.5;
 }
 
-/* ==========================
-   Tablet
-========================== */
-
 @media (max-width: 1024px) {
   .contactWrapper {
     grid-template-columns: 1fr;
@@ -393,10 +331,6 @@
     gap: 10px;
   }
 }
-
-/* ==========================
-   Mobile
-========================== */
 
 @media (max-width: 767px) {
   .contactSection {
@@ -519,11 +453,7 @@
   }
 }
 
-/* ==========================
-   Small Mobile
-========================== */
-
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .heading {
     font-size: 26px;
   }

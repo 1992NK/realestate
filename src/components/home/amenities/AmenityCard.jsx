@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import {
   FaShieldAlt,
   FaSwimmer,
@@ -10,7 +9,6 @@ import {
   FaChild,
   FaHome,
 } from "react-icons/fa";
-
 import styles from "./amenityCard.module.css";
 
 const iconMap = {
@@ -34,26 +32,17 @@ const AmenityCard = ({ amenity }) => {
           src={amenity.image}
           alt={amenity.title}
           fill
-          sizes="(max-width: 767px) 100vw,
-                 (max-width: 1100px) 50vw,
-                 25vw"
+          sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 25vw"
           className={styles.image}
         />
       </div>
 
       <div className={styles.content}>
-        <div className={styles.iconWrapper}>
-          {Icon && <Icon />}
-        </div>
-
+        <div className={styles.iconWrapper}>{Icon && <Icon />}</div>
 
         <div className={styles.info}>
           <span className={styles.number}>{amenity.number}</span>
-
-          <h3 className={styles.title}>
-            {amenity.title}
-          </h3>
-
+          <h3 className={styles.title}>{amenity.title}</h3>
         </div>
       </div>
     </article>

@@ -25,38 +25,36 @@
   transform: scale(1.035);
 }
 
-.content{
-    z-index: 2;
-        background: linear-gradient(90deg, #ee7c0c, #d36f0c);
-    border-radius: 0px 0px 17px 17px;
-    align-items: center;
-    min-height: 70px;
-    margin-top: -33px;
-    padding: 17px 22px;
-    display: flex;
-    position: relative;
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  margin-top: -33px;
+  padding: 17px 22px;
+  border-radius: 0 0 17px 17px;
+  background: linear-gradient(90deg, #ee7c0c, #d36f0c);
 }
 
-.iconWrapper  {
-    color: #e8b654;
-    border: 2px solid #e8b654;
-    border-radius: 50%;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    width: 34px;
-    height: 34px;
-    font-size: 14px;
-    display: flex;
+.iconWrapper {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #e8b654;
+  border-radius: 50%;
+  color: #e8b654;
+  font-size: 14px;
 }
 
 .divider {
   flex-shrink: 0;
-
   width: 1px;
   height: 58px;
   margin: 0 20px;
-
   background: rgba(232, 182, 84, 0.7);
 }
 
@@ -69,39 +67,29 @@
 
 .number {
   margin-bottom: 2px;
-
   color: #e8b654;
-
   font-family: Georgia, "Times New Roman", serif;
   font-size: 23px;
   line-height: 1;
 }
 
-.title{
-    color: #fff;
-    font-family: var(--font-league-spartan), sans-serif;
-    letter-spacing: 0px;
-    margin: 0;
-    font-size: clamp(18px, 4vw, 20px);
-    font-weight: 400;
-    line-height: 1;
-    margin-left: 15px;
+.title {
+  margin: 0 0 0 15px;
+  color: #ffffff;
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: clamp(18px, 4vw, 20px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .line {
   display: block;
-
   width: 48px;
   height: 3px;
-
   margin-top: 12px;
-
   background: #e8b654;
 }
-
-/* =========================
-   Large Tablet
-========================= */
 
 @media (max-width: 1200px) {
   .imageWrapper {
@@ -115,7 +103,6 @@
   .iconWrapper {
     width: 62px;
     height: 62px;
-
     font-size: 24px;
   }
 
@@ -127,10 +114,6 @@
     font-size: 18px;
   }
 }
-
-/* =========================
-   Tablet
-========================= */
 
 @media (max-width: 991px) {
   .imageWrapper {
@@ -146,10 +129,6 @@
   }
 }
 
-/* =========================
-   Mobile
-========================= */
-
 @media (max-width: 767px) {
   .imageWrapper {
     height: 245px;
@@ -159,14 +138,12 @@
     min-height: 102px;
     margin-top: -30px;
     padding: 15px 18px;
-
     border-radius: 38px 38px 16px 16px;
   }
 
   .iconWrapper {
     width: 60px;
     height: 60px;
-
     border-width: 3px;
     font-size: 23px;
   }
@@ -190,10 +167,6 @@
   }
 }
 
-/* =========================
-   Small Mobile
-========================= */
-
 @media (max-width: 480px) {
   .card {
     border-radius: 16px;
@@ -210,7 +183,6 @@
   .iconWrapper {
     width: 55px;
     height: 55px;
-
     font-size: 21px;
   }
 

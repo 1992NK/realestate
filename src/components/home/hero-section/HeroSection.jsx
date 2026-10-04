@@ -8,7 +8,7 @@ import styles from "./heroSection.module.css";
 
 const HeroSection = () => {
   return (
-    <section className={`${styles.hero} heroSection`}>
+    <section className={`${styles.hero} heroSection`} id="home">
       <div className={styles.background}>
         <Image src="/images/home/hero-project.webp" alt="Deen Dayal Affordable Plot" fill priority sizes="100vw" className={styles.backgroundImage} />
         <div className={styles.overlay} />
@@ -27,7 +27,7 @@ const HeroSection = () => {
               <span>{heroData.titleBottom}</span>
             </h1>
 
-            <div className="heroRera">
+            <div className={styles.rera}>
               <ReraBadge />
             </div>
           </div>
@@ -43,7 +43,9 @@ const HeroSection = () => {
         <HeroStats />
       </div>
 
-      <RegistrationBar />
+      <div className={styles.registration}>
+        <RegistrationBar />
+      </div>
     </section>
   );
 };

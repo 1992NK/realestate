@@ -116,7 +116,31 @@
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: applyButtonJump 1.8s ease-in-out infinite;
+}
+
+@keyframes applyButtonJump {
+  0%,
+  55%,
+  100% {
+    transform: translateY(0);
+  }
+
+  65% {
+    transform: translateY(-8px);
+  }
+
+  72% {
+    transform: translateY(0);
+  }
+
+  79% {
+    transform: translateY(-4px);
+  }
+
+  86% {
+    transform: translateY(0);
+  }
 }
 
 .applyButton:hover {
@@ -142,10 +166,11 @@
   flex-shrink: 0;
   place-items: center;
   border-radius: 8px;
-  background: #0b3979;
+  background: #006b2d;
   color: #ffffff;
   font-size: 21px;
   cursor: pointer;
+  border:none
 }
 
 @media (max-width: 1399px) {
@@ -181,9 +206,6 @@
     min-height: 95px;
   }
 
-  .contactList {
-    display: none;
-  }
 
   .brand {
     flex: 1;
@@ -213,6 +235,12 @@
     margin-top: 5px;
     font-size: 9px;
   }
+
+  
+  .contactList {
+    display: none;
+  }
+
 }
 
 @media (max-width: 767px) {

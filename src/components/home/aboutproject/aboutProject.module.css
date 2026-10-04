@@ -264,15 +264,14 @@
     width: 30px;
   }
 
-  .heading {
-    font-size: clamp(36px, 9.5vw, 48px);
-    line-height: 1.03;
-    letter-spacing: -1px;
+   .heading {
+    font-size: 32px;
+    line-height: 1.05;
   }
 
   .subheading {
     margin: 11px 0 15px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.25;
   }
 
@@ -322,12 +321,12 @@
   }
 
   .heading {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 1.05;
   }
 
   .subheading {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .description p {

@@ -14,15 +14,15 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <HeroSection />
+         <HeroSection />
         <ReraRegistration />
         <AboutProject />
         <LocationBenefits />
-        <ProjectPlan />
+       <ProjectPlan />
         <LocationMap />
-        <Amenities />
+         <Amenities />
         <PriceList />
-        <Footer />
+        <Footer /> 
       </main>
     </>
   );

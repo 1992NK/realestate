@@ -10,9 +10,7 @@
   visibility: hidden;
   pointer-events: none;
   cursor: pointer;
-  transition:
-    opacity 0.3s ease,
-    visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .overlayVisible {
@@ -35,11 +33,13 @@
   background: #ffffff;
   box-shadow: -10px 0 35px rgba(0, 24, 67, 0.14);
   transform: translateX(105%);
-  transition: transform 0.35s ease;
+  visibility: hidden;
+  transition: transform 0.35s ease, visibility 0.35s ease;
 }
 
 .menuOpen {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .menuHeader {
@@ -47,44 +47,20 @@
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  padding-bottom: 22px;
+  padding-bottom: 18px;
   border-bottom: 1px solid #e6ebf2;
 }
 
-.brand {
+.brandLogo {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  width: 44px;
-  height: 44px;
   flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: #0a397d;
-  color: #ffffff;
-  font-size: 18px;
 }
 
-.brandContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.brandContent strong {
-  color: #0a397d;
-  font-size: 14px;
-}
-
-.brandContent > span {
-  margin-top: 3px;
-  color: #555f6e;
-  font-size: 7px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
+.logoImage {
+  width: 72px;
+  height: auto;
+  object-fit: contain;
 }
 
 .closeButton {
@@ -93,66 +69,252 @@
   flex-shrink: 0;
   display: grid;
   place-items: center;
+  border: 0;
   border-radius: 50%;
   background: #eef3f9;
-  color: #0a397d;
+  color: #077430;
   font-size: 22px;
   cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.closeButton:hover {
+  background: #077430;
+  color: #ffffff;
 }
 
 .navigation {
-  margin-top: 25px;
+  margin-top: 22px;
   display: flex;
   flex-direction: column;
 }
 
 .navLink {
-  min-height: 60px;
+  min-height: 58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
   border-bottom: 1px solid #e9edf3;
-  color: #08295e;
+  color: #141414;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  transition:
-    color 0.2s ease,
-    padding-left 0.2s ease;
+  transition: color 0.2s ease, padding-left 0.2s ease;
 }
 
 .navLink svg {
+  flex-shrink: 0;
   color: #d79d00;
   font-size: 12px;
 }
 
 .navLink:hover {
   padding-left: 7px;
-  color: #00509e;
+  color: #077430;
+}
+
+.bottomArea {
+  margin-top: auto;
+  padding-top: 28px;
 }
 
 .applyButton {
   min-height: 55px;
-  margin-top: 30px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
   border-radius: 8px;
-  background:
-    linear-gradient(
-      90deg,
-      #003ca8,
-      #0b2e71
-    );
+  background: linear-gradient(90deg, #ee7c0c, #d36f0c);
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-@media (min-width: 901px) {
+.applyButton svg {
+  flex-shrink: 0;
+}
+
+.applyButton:hover {
+  box-shadow: 0 8px 18px rgba(211, 111, 12, 0.25);
+}
+
+.digitalIndia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 22px;
+}
+
+.digitalIndiaImage {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes applyBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .menu {
+    width: min(88%, 380px);
+  }
+
+  .logoImage {
+    width: 70px;
+  }
+
+  .applyButton {
+    animation: applyBounce 1.4s ease-in-out infinite;
+  }
+
+  .applyButton:hover {
+    animation-play-state: paused;
+    transform: translateY(-2px);
+  }
+
+  .digitalIndiaImage {
+    width: 195px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    width: min(88%, 360px);
+    padding: 20px;
+  }
+
+  .logoImage {
+    width: 68px;
+  }
+
+  .navigation {
+    margin-top: 20px;
+  }
+
+  .navLink {
+    min-height: 56px;
+    font-size: 13px;
+  }
+
+  .applyButton {
+    min-height: 53px;
+  }
+
+  .digitalIndiaImage {
+    width: 190px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    width: min(90%, 340px);
+    padding: 18px;
+  }
+
+  .menuHeader {
+    padding-bottom: 16px;
+  }
+
+  .logoImage {
+    width: 65px;
+  }
+
+  .closeButton {
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .navigation {
+    margin-top: 18px;
+  }
+
+  .navLink {
+    min-height: 54px;
+    font-size: 12px;
+  }
+
+  .bottomArea {
+    padding-top: 24px;
+  }
+
+  .applyButton {
+    min-height: 52px;
+    padding: 0 18px;
+    font-size: 13px;
+  }
+
+  .digitalIndia {
+    padding-top: 20px;
+  }
+
+  .digitalIndiaImage {
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .menuHeader {
+    gap: 12px;
+    padding-bottom: 14px;
+  }
+
+  .logoImage {
+    width: 60px;
+  }
+
+  .closeButton {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+
+  .navigation {
+    margin-top: 16px;
+  }
+
+  .navLink {
+    min-height: 51px;
+    font-size: 12px;
+  }
+
+  .bottomArea {
+    padding-top: 20px;
+  }
+
+  .applyButton {
+    min-height: 50px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+  .digitalIndia {
+    padding-top: 18px;
+  }
+
+  .digitalIndiaImage {
+    width: 165px;
+  }
+}
+
+@media (min-width: 1200px) {
   .overlay,
   .menu {
     display: none;

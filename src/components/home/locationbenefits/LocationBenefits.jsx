@@ -41,7 +41,7 @@ const LocationBenefits = () => {
           </div>
 
           <div className={styles.buttonWrapper}>
-            <Link href="#contact" className={styles.applyButton}>
+            <Link href="/register_online" className={styles.applyButton}>
               <span>Apply Now</span>
               <FaArrowRightLong />
             </Link>

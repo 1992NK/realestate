@@ -1,15 +1,15 @@
+import Image from "next/image";
+import Link from "next/link";
 import {
   FaArrowRight,
   FaBars,
   FaEnvelope,
-  FaHouseChimney,
   FaLocationDot,
   FaPhone,
 } from "react-icons/fa6";
 
-import { brandData, contactData, headerActions } from "@/data/headerData";
+import { contactData, headerActions } from "@/data/headerData";
 import styles from "./contactBar.module.css";
-import Image from "next/image";
 
 const contactIcons = {
   email: FaEnvelope,
@@ -21,9 +21,9 @@ const ContactBar = ({ isMenuOpen, onMenuOpen }) => {
   return (
     <div className={styles.contactBar}>
       <div className={`container ${styles.inner}`}>
-        <a href="#home" className={styles.brand}>
-          <Image src="/images/header/logo.jpg" alt="Haryana Logo" width={75} height={85} />
-        </a>
+        <Link href="/" className={styles.brand}>
+          <Image src="/images/header/logo.jpg" alt="Haryana Logo" width={75} height={85} priority />
+        </Link>
 
         <div className={styles.contactList}>
           {contactData.map((item) => {
@@ -43,12 +43,12 @@ const ContactBar = ({ isMenuOpen, onMenuOpen }) => {
           })}
         </div>
 
-        <a href={headerActions.apply.href} className={styles.applyButton}>
+        <Link href={headerActions.apply.href} className={styles.applyButton}>
           <span>{headerActions.apply.label}</span>
           <span className={styles.applyArrow}>
             <FaArrowRight />
           </span>
-        </a>
+        </Link>
 
         <button type="button" className={styles.menuButton} onClick={onMenuOpen} aria-label="Open navigation menu" aria-expanded={isMenuOpen}>
           <FaBars />

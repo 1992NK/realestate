@@ -1,12 +1,159 @@
-.stats {
+.wrapper {
   position: relative;
-  z-index: 3;
+  width: 100%;
+}
+
+.slider {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin-top: 15px;
-  background: rgba(255, 255, 255, 0.97);
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 12px 35px rgba(7, 31, 61, 0.18);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+.slide {
+  min-width: 0;
+  background: transparent;
+  border-right: 1px solid #e2e6eb;
+}
+
+.slide:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.slide:last-child {
+  border-right: 0;
+  border-radius: 0 16px 16px 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 36px;
+  height: 36px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e6eb;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0b7f36;
+  font-size: 13px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: background 0.25s ease, color 0.25s ease, opacity 0.25s ease;
+}
+
+.arrow:hover:not(:disabled) {
+  background: #0b7f36;
+  color: #ffffff;
+}
+
+.arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.prev {
+  left: -17px;
+}
+
+.next {
+  right: -17px;
+}
+
+@media (max-width: 1399px) {
+  .arrow {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .arrow {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    border-radius: 12px;
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slide {
+    flex: 0 0 33.333333%;
+    scroll-snap-align: start;
+  }
+
+  .slide:first-child,
+  .slide:last-child {
+    border-radius: 0;
+  }
+
+  .arrow {
+    display: flex;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slide {
+    flex: 0 0 50%;
+  }
+
+  .arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .prev {
+    left: 4px;
+  }
+
+  .next {
+    right: 4px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .slide {
+    flex: 0 0 100%;
+  }
+
+  .arrow {
+    width: 28px;
+    height: 28px;
+    font-size: 10px;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
 }

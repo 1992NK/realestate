@@ -1,15 +1,11 @@
 .card {
   min-width: 0;
   min-height: 105px;
+  height: 100%;
   display: flex;
   align-items: center;
   gap: 14px;
   padding: 17px 16px;
-  border-right: 1px solid #e2e6eb;
-}
-
-.card:last-child {
-  border-right: 0;
 }
 
 .icon {
@@ -86,7 +82,7 @@
   }
 
   .value {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .description {
@@ -98,6 +94,7 @@
   .card {
     min-height: 95px;
     gap: 10px;
+    padding: 15px 18px;
   }
 
   .icon {
@@ -118,11 +115,11 @@
 @media (max-width: 767px) {
   .card {
     min-height: 90px;
-    padding: 14px 10px;
+    padding: 14px 20px;
   }
 
   .value {
-    font-size: 18px;
+    font-size: 23px;
   }
 
   .description {
@@ -132,20 +129,31 @@
   .roadDescription {
     font-size: 8px;
   }
+
+   .label {
+    font-size: 12px;
+  }
+
+  
+  .value {
+    font-size: 30px;
+  }
+
 }
 
 @media (max-width: 576px) {
   .card {
-    min-height: 85px;
-    border-right: 0;
-    border-bottom: 1px solid #e2e6eb;
+    min-height: 90px;
+    padding: 15px 45px;
   }
 
-  .card:last-child {
-    border-bottom: 0;
+  .label {
+    font-size: 15px;
   }
 
+  
   .value {
-    font-size: 17px;
+    font-size: 30px;
   }
+
 }

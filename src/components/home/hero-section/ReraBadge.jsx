@@ -1,26 +1,10 @@
-import { FaCheck, FaStar } from "react-icons/fa6";
+import Image from "next/image";
 import styles from "./reraBadge.module.css";
 
 const ReraBadge = () => {
   return (
     <div className={styles.badge}>
-      <div className={styles.outerRing}>
-        <div className={styles.inner}>
-          <div className={styles.stars}>
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
-
-          <strong className={styles.rera}>RERA</strong>
-
-          <span className={styles.approved}>Approved</span>
-
-          <span className={styles.check}>
-            <FaCheck />
-          </span>
-        </div>
-      </div>
+      <Image src="/images/rera/rera-approved.png" alt="RERA Approved" width={150} height={150} priority className={styles.logo} />
     </div>
   );
 };

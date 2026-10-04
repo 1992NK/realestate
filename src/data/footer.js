@@ -2,19 +2,19 @@ export const footerContactData = {
   siteOffice: {
     label: "Site Office:",
     value:
-      "Affordable Residential Plots in Sector 19, Dharuhera",
+      "6RG9+FC3, Sector 19, Dharuhera, Haryana 123106",
   },
 
   phone: {
     label: "Helpline Number:",
-    value: " +91 987-654-3210",
-    href: "tel:+919876543210",
+    value: " +91 123456789",
+    href: "tel:+123456789",
   },
 
   email: {
     label: "Email Id:",
-    value: "info@deendayaljanaawasyojna.org",
-    href: "mailto:info@deendayaljanaawasyojna.org",
+    value: "info@deendayalplots.com",
+    href: "mailto:info@deendayalplots.com",
   },
 };
 

@@ -8,6 +8,6 @@ export const locationMapData = {
   image: "/images/location-map.png",
   imageAlt: "Jay Shree Royal Greens location map",
 
-  callText: "Please Call  +91 987-654-3210 for Further Assistance",
-  phoneNumber: "+919876543210",
+  callText: "Please Call  +91 123456789 for Further Assistance",
+  phoneNumber: "+123456789",
 };
