@@ -35,6 +35,9 @@
   .logo {
     width: 95px;
   }
+
+  .badge{margin-top: 0;}
+
 }
 
 @media (max-width: 576px) {

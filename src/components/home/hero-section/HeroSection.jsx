@@ -10,7 +10,24 @@ const HeroSection = () => {
   return (
     <section className={`${styles.hero} heroSection`} id="home">
       <div className={styles.background}>
-        <Image src="/images/home/hero-project.webp" alt="Deen Dayal Affordable Plot" fill priority sizes="100vw" className={styles.backgroundImage} />
+        <Image
+          src="/images/home/hero-project.webp"
+          alt="Deen Dayal Affordable Plot"
+          fill
+          priority
+          sizes="(max-width: 767px) 0px, 100vw"
+          className={`${styles.backgroundImage} ${styles.desktopImage}`}
+        />
+
+        <Image
+          src="/images/home/hero-project-mobile.webp"
+          alt="Deen Dayal Affordable Plot"
+          fill
+          priority
+          sizes="(max-width: 767px) 100vw, 0px"
+          className={`${styles.backgroundImage} ${styles.mobileImage}`}
+        />
+
         <div className={styles.overlay} />
       </div>
 
@@ -27,7 +44,7 @@ const HeroSection = () => {
               <span>{heroData.titleBottom}</span>
             </h1>
 
-            <div className={styles.rera}>
+            <div className={`${styles.rera} heroRera`}>
               <ReraBadge />
             </div>
           </div>
